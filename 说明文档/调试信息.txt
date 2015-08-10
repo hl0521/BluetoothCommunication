@@ -1,0 +1,1727 @@
+837  32700-32700/? D/dalvikvm©s Late-enabling CheckJNI
+907  32700-32700    V/uBleService©s Bind service on device
+927  32700-32700    D/dalvikvm©s GetMethodID: not returning static method Landroid/os/Process;.getTotalMemory ()J
+927  32700-32700    D/dalvikvm©s GetMethodID: not returning static method Landroid/os/Process;.getFreeMemory ()J
+947  32700-32700    V/uBleService©s Register service :android.app.Application
+947  32700-32700    D/BluetoothAdapter©s startLeScan(): null
+967  32700-32713    D/BluetoothAdapter©s onClientRegistered() - status=0 clientIf=5
+977  32700-32700    V/uBleScanner©s StartLeScan.
+997  32700-32700    I/Adreno-EGL©s <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build:  ()
+    OpenGL ES Shader Compiler Version: E031.24.00.15
+    Build Date: 04/21/15 Tue
+    Local Branch:
+    Remote Branch:
+    Local Patches:
+    Reconstruct Branch:
+027  32700-32700    D/OpenGLRenderer©s Enabling debug mode 0
+027  32700-32700    V/uBleService©s Service connected
+057  32700-32700    I/Timeline©s Timeline: Activity_idle id: android.os.BinderProxy@422320a0 time:3424654
+497  32700-32713    V/uBleScanner©s onLeScan device scanned, address B4:99:4C:4C:EE:EF, name Tv221u-3
+977  32700-32700    V/uBleScanner©s StopLeScan.
+977  32700-32700    D/BluetoothAdapter©s stopLeScan()
+257  32700-32700    W/Toast©s From      , go ahead.
+267  32700-32700    D/BluetoothGatt©s connect() - device: B4:99:4C:4C:EE:EF, auto: false
+267  32700-32700    D/BluetoothGatt©s registerApp()
+267  32700-32700    D/BluetoothGatt©s registerApp() - UUID=2e2fe433-3702-4819-a840-d233c6cc86f5
+337  32700-32713    D/BluetoothGatt©s onClientRegistered() - status=0 clientIf=5
+347  32700-32700    V/uBleGatt©s Trying to create a new connection: B4:99:4C:4C:EE:EF
+567  32700-32714    D/BluetoothGatt©s onClientConnectionState() - status=0 clientIf=5 device=B4:99:4C:4C:EE:EF
+567  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF
+567  32700-32714    V/uBleService©s Connected to GATT server.
+567  32700-32714    D/BluetoothGatt©s discoverServices() - device: B4:99:4C:4C:EE:EF
+577  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_GATT_CONNECTED
+577  32700-32700    V/uBleDeviceAdapter©s onConnected B4:99:4C:4C:EE:EF,0
+577  32700-32714    V/uBleService©s Attempting to start service discovery.
+577  32700-32713    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000180a-0000-1000-8000-00805f9b34fb
+577  32700-32714    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000180f-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe0-0000-1000-8000-00805f9b34fb
+587  32700-32714    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe5-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000fff0-0000-1000-8000-00805f9b34fb
+587  32700-32714    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd0-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc0-0000-1000-8000-00805f9b34fb
+587  32700-32714    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb0-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffa0-0000-1000-8000-00805f9b34fb
+587  32700-32714    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ff90-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000fc60-0000-1000-8000-00805f9b34fb
+587  32700-32714    D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000fe00-0000-1000-8000-00805f9b34fb
+597  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a23-0000-1000-8000-00805f9b34fb
+597  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a26-0000-1000-8000-00805f9b34fb
+597  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a29-0000-1000-8000-00805f9b34fb
+597  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a19-0000-1000-8000-00805f9b34fb
+597  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+607    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb
+607  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff1-0000-1000-8000-00805f9b34fb
+607  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff2-0000-1000-8000-00805f9b34fb
+607    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff3-0000-1000-8000-00805f9b34fb
+607  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff4-0000-1000-8000-00805f9b34fb
+607  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff5-0000-1000-8000-00805f9b34fb
+607    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff6-0000-1000-8000-00805f9b34fb
+607  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff7-0000-1000-8000-00805f9b34fb
+607  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff8-0000-1000-8000-00805f9b34fb
+607    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff9-0000-1000-8000-00805f9b34fb
+607  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd1-0000-1000-8000-00805f9b34fb
+607  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd2-0000-1000-8000-00805f9b34fb
+617    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd3-0000-1000-8000-00805f9b34fb
+617  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd4-0000-1000-8000-00805f9b34fb
+617  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc1-0000-1000-8000-00805f9b34fb
+617    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc2-0000-1000-8000-00805f9b34fb
+617  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb1-0000-1000-8000-00805f9b34fb
+617  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb2-0000-1000-8000-00805f9b34fb
+617    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb3-0000-1000-8000-00805f9b34fb
+617  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb4-0000-1000-8000-00805f9b34fb
+627  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffa2-0000-1000-8000-00805f9b34fb
+627    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffa1-0000-1000-8000-00805f9b34fb
+627  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff91-0000-1000-8000-00805f9b34fb
+627  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff92-0000-1000-8000-00805f9b34fb
+627    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff93-0000-1000-8000-00805f9b34fb
+627  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff94-0000-1000-8000-00805f9b34fb
+627  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff95-0000-1000-8000-00805f9b34fb
+627    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff96-0000-1000-8000-00805f9b34fb
+627  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff97-0000-1000-8000-00805f9b34fb
+627  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff98-0000-1000-8000-00805f9b34fb
+627    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff99-0000-1000-8000-00805f9b34fb
+627  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff9a-0000-1000-8000-00805f9b34fb
+637  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fc64-0000-1000-8000-00805f9b34fb
+637    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe01-0000-1000-8000-00805f9b34fb
+637  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe02-0000-1000-8000-00805f9b34fb
+637  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe03-0000-1000-8000-00805f9b34fb
+637    32700-772    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe04-0000-1000-8000-00805f9b34fb
+637  32700-32714    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe05-0000-1000-8000-00805f9b34fb
+637  32700-32713    D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe06-0000-1000-8000-00805f9b34fb
+647    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+647  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+647  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+647  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+647  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+647  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+647    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+657  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+657    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+657    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+657  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+657  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+667  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+667  32700-32713    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+677    32700-772    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+677  32700-32714    D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+677  32700-32713    D/BluetoothGatt©s onSearchComplete() = Device=B4:99:4C:4C:EE:EF Status=0
+677  32700-32713    V/uBleService©s onServicesDiscovered received: 0
+677  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF
+677  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_GATT_SERVICES_DISCOVERED
+677  32700-32700    V/uBleDeviceAdapter©s onServiceDiscovered B4:99:4C:4C:EE:EF,0
+677  32700-32700    V/uBleDeviceAdapter©s enableDataNotify 0000ffe0-0000-1000-8000-00805f9b34fb,0000ffe4-0000-1000-8000-00805f9b34fb
+677  32700-32700    V/uBleService©s enableNotify: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+677  32700-32700    D/BluetoothGatt©s setCharacteristicNotification() - uuid: 0000ffe4-0000-1000-8000-00805f9b34fb enable: true
+677  32700-32700    V/uBleGatt©s writeDescriptor 00002902-0000-1000-8000-00805f9b34fb
+677  32700-32700    D/BluetoothGatt©s writeDescriptor() - uuid: 00002902-0000-1000-8000-00805f9b34fb
+677  32700-32700    V/uBleDeviceAdapter©s enablePasswordNotify 0000ffc0-0000-1000-8000-00805f9b34fb,0000ffc2-0000-1000-8000-00805f9b34fb
+677  32700-32700    V/uBleService©s enableNotify: B4:99:4C:4C:EE:EF,0000ffc2-0000-1000-8000-00805f9b34fb
+687  32700-32700    D/BluetoothGatt©s setCharacteristicNotification() - uuid: 0000ffc2-0000-1000-8000-00805f9b34fb enable: true
+687  32700-32700    V/uBleGatt©s writeDescriptor 00002902-0000-1000-8000-00805f9b34fb
+687  32700-32700    D/BluetoothGatt©s writeDescriptor() - uuid: 00002902-0000-1000-8000-00805f9b34fb
+767  32700-32714    D/BluetoothGatt©s onDescriptorWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+797  32700-32700    V/uBleDeviceAdapter©s getDeviceName 0000ff90-0000-1000-8000-00805f9b34fb,0000ff91-0000-1000-8000-00805f9b34fb
+797  32700-32700    V/uBleService©s read: B4:99:4C:4C:EE:EF,0000ff91-0000-1000-8000-00805f9b34fb
+797  32700-32700    D/BluetoothGatt©s readCharacteristic() - uuid: 0000ff91-0000-1000-8000-00805f9b34fb
+867  32700-32713    D/BluetoothGatt©s onCharacteristicRead() - Device=B4:99:4C:4C:EE:EF UUID=0000ff91-0000-1000-8000-00805f9b34fb Status=0
+867  32700-32713    V/uBleService©s onCharacteristicRead received: 0000ff91-0000-1000-8000-00805f9b34fb,0
+867  32700-32713    V/uBleService©s data bytes: 8
+867  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ff91-0000-1000-8000-00805f9b34fb
+867  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_READ
+867  32700-32700    V/uBleDeviceAdapter©s onDataRead B4:99:4C:4C:EE:EF,0000ff91-0000-1000-8000-00805f9b34fb,0,54 76 32 32 31 75 2D 33
+877  32700-32700    V/uBleDeviceAdapter©s getTransmitDelta 0000ff90-0000-1000-8000-00805f9b34fb,0000ff92-0000-1000-8000-00805f9b34fb
+877  32700-32700    V/uBleService©s read: B4:99:4C:4C:EE:EF,0000ff92-0000-1000-8000-00805f9b34fb
+877  32700-32700    D/BluetoothGatt©s readCharacteristic() - uuid: 0000ff92-0000-1000-8000-00805f9b34fb
+957  32700-32714    D/BluetoothGatt©s onCharacteristicRead() - Device=B4:99:4C:4C:EE:EF UUID=0000ff92-0000-1000-8000-00805f9b34fb Status=0
+967  32700-32714    V/uBleService©s onCharacteristicRead received: 0000ff92-0000-1000-8000-00805f9b34fb,0
+967  32700-32714    V/uBleService©s data bytes: 1
+967  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ff92-0000-1000-8000-00805f9b34fb
+967  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_READ
+967  32700-32700    V/uBleDeviceAdapter©s onDataRead B4:99:4C:4C:EE:EF,0000ff92-0000-1000-8000-00805f9b34fb,0,00
+967  32700-32700    V/uBleDeviceAdapter©s getUARTRate 0000ff90-0000-1000-8000-00805f9b34fb,0000ff93-0000-1000-8000-00805f9b34fb
+967  32700-32700    V/uBleService©s read: B4:99:4C:4C:EE:EF,0000ff93-0000-1000-8000-00805f9b34fb
+967  32700-32700    D/BluetoothGatt©s readCharacteristic() - uuid: 0000ff93-0000-1000-8000-00805f9b34fb
+057    32700-772    D/BluetoothGatt©s onCharacteristicRead() - Device=B4:99:4C:4C:EE:EF UUID=0000ff93-0000-1000-8000-00805f9b34fb Status=0
+057    32700-772    V/uBleService©s onCharacteristicRead received: 0000ff93-0000-1000-8000-00805f9b34fb,0
+057    32700-772    V/uBleService©s data bytes: 1
+057    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ff93-0000-1000-8000-00805f9b34fb
+067  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_READ
+067  32700-32700    V/uBleDeviceAdapter©s onDataRead B4:99:4C:4C:EE:EF,0000ff93-0000-1000-8000-00805f9b34fb,0,05
+067  32700-32700    V/uBleDeviceAdapter©s getBroadcastFrequency 0000ff90-0000-1000-8000-00805f9b34fb,0000ff95-0000-1000-8000-00805f9b34fb
+067  32700-32700    V/uBleService©s read: B4:99:4C:4C:EE:EF,0000ff95-0000-1000-8000-00805f9b34fb
+067  32700-32700    D/BluetoothGatt©s readCharacteristic() - uuid: 0000ff95-0000-1000-8000-00805f9b34fb
+157  32700-32713    D/BluetoothGatt©s onCharacteristicRead() - Device=B4:99:4C:4C:EE:EF UUID=0000ff95-0000-1000-8000-00805f9b34fb Status=0
+157  32700-32713    V/uBleService©s onCharacteristicRead received: 0000ff95-0000-1000-8000-00805f9b34fb,0
+157  32700-32713    V/uBleService©s data bytes: 1
+157  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ff95-0000-1000-8000-00805f9b34fb
+167  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_READ
+167  32700-32700    V/uBleDeviceAdapter©s onDataRead B4:99:4C:4C:EE:EF,0000ff95-0000-1000-8000-00805f9b34fb,0,00
+187  32700-32700    V/uBleDeviceAdapter©s getTransmitPower 0000ff90-0000-1000-8000-00805f9b34fb,0000ff97-0000-1000-8000-00805f9b34fb
+187  32700-32700    V/uBleService©s read: B4:99:4C:4C:EE:EF,0000ff97-0000-1000-8000-00805f9b34fb
+187  32700-32700    D/BluetoothGatt©s readCharacteristic() - uuid: 0000ff97-0000-1000-8000-00805f9b34fb
+257    32700-772    D/BluetoothGatt©s onCharacteristicRead() - Device=B4:99:4C:4C:EE:EF UUID=0000ff97-0000-1000-8000-00805f9b34fb Status=0
+257    32700-772    V/uBleService©s onCharacteristicRead received: 0000ff97-0000-1000-8000-00805f9b34fb,0
+257    32700-772    V/uBleService©s data bytes: 1
+257    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ff97-0000-1000-8000-00805f9b34fb
+267  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_READ
+267  32700-32700    V/uBleDeviceAdapter©s onDataRead B4:99:4C:4C:EE:EF,0000ff97-0000-1000-8000-00805f9b34fb,0,01
+277  32700-32700    V/uBleDeviceAdapter©s submitPassword 0000ffc0-0000-1000-8000-00805f9b34fb,0000ffc1-0000-1000-8000-00805f9b34fb,000000
+277  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffc1-0000-1000-8000-00805f9b34fb
+277  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffc1-0000-1000-8000-00805f9b34fb
+357  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc2-0000-1000-8000-00805f9b34fb
+357  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffc2-0000-1000-8000-00805f9b34fb
+357  32700-32713    V/uBleService©s onCharacteristicChanged data: 00
+357  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffc2-0000-1000-8000-00805f9b34fb
+357  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+357  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffc2-0000-1000-8000-00805f9b34fb,00
+357    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc1-0000-1000-8000-00805f9b34fb Status=0
+357    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffc1-0000-1000-8000-00805f9b34fb,0
+357    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffc1-0000-1000-8000-00805f9b34fb
+367  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 10 28 59 8C 46 10 D3 49 95 18 FF
+377  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 10 28 59 8C 46 10 D3 49 95 18 FF
+377  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+377  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+377  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+377  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+377  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+377  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+377  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffc1-0000-1000-8000-00805f9b34fb,0
+377  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+377  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+457    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+457    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+457    32700-772    V/uBleService©s onCharacteristicChanged data: FB 10 28 59 8C 46 10 D3 49 95 18 FF
+457    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+457  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+457  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 10 28 59 8C 46 10 D3 49 95 18 FF
+587  32700-32700    V/uAbstractDeviceAdapter©s send data: FB F3 60 49 70 84 2B EB 58 88 9C FF
+587  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB F3 60 49 70 84 2B EB 58 88 9C FF
+587  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+587  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+587  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+587  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+607  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+607  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+747    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+747    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+747    32700-772    V/uBleService©s onCharacteristicChanged data: FB F3 60 49 70 84 2B EB 58 88 9C FF
+747    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+757  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+757  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB F3 60 49 70 84 2B EB 58 88 9C FF
+887  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 38 E9 47 6D 6C FE 22 A7 45 6D FF
+887  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 38 E9 47 6D 6C FE 22 A7 45 6D FF
+887  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+887  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+887  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+887  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+887  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+907  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+907  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+987    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+987    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+997    32700-772    V/uBleService©s onCharacteristicChanged data: FB 38 E9 47 6D 6C FE 22 A7 45 6D FF
+997    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+997  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+007  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 38 E9 47 6D 6C FE 22 A7 45 6D FF
+127  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 69 50 4C 75 B4 85 7B BB 0D AA FF
+137  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 69 50 4C 75 B4 85 7B BB 0D AA FF
+137  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+137  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+137  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+137  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+137  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+147  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+157  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+377    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+377    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+387    32700-772    V/uBleService©s onCharacteristicChanged data: FB 69 50 4C 75 B4 85 7B BB 0D AA FF
+387    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+387  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+387  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 69 50 4C 75 B4 85 7B BB 0D AA FF
+517  32700-32700    V/uAbstractDeviceAdapter©s send data: FB AE D8 4A 73 9C 58 B3 09 CB CB FF
+517  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB AE D8 4A 73 9C 58 B3 09 CB CB FF
+517  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+517  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+517  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+517  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+517  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+537  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+537  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+577  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+577  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+577  32700-32713    V/uBleService©s onCharacteristicChanged data: FB AE D8 4A 73 9C 58 B3 09 CB CB FF
+577  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+577  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+577  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB AE D8 4A 73 9C 58 B3 09 CB CB FF
+707  32700-32700    V/uAbstractDeviceAdapter©s send data: FB E0 3F 4F 7A E4 DF 0B 1D 93 59 FF
+707  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB E0 3F 4F 7A E4 DF 0B 1D 93 59 FF
+707  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+707  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+707  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+707  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+707  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+727  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+727  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+817    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+817    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+817    32700-772    V/uBleService©s onCharacteristicChanged data: FB E0 3F 4F 7A E4 DF 0B 1D 93 59 FF
+817    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+827  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+827  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB E0 3F 4F 7A E4 DF 0B 1D 93 59 FF
+967  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 25 C8 4D 78 CC B2 43 6C 50 2A FF
+967  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 25 C8 4D 78 CC B2 43 6C 50 2A FF
+967  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+977  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+977  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+977  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+977  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+007  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+007  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+107    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+107    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+117    32700-772    V/uBleService©s onCharacteristicChanged data: FB 25 C8 4D 78 CC B2 43 6C 50 2A FF
+117    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+127  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+127  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 25 C8 4D 78 CC B2 43 6C 50 2A FF
+257  32700-32700    V/uAbstractDeviceAdapter©s send data: FB A3 B3 3A 56 94 68 19 6D ED C3 FF
+257  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB A3 B3 3A 56 94 68 19 6D ED C3 FF
+257  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+257  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+257    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+257    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+257    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+287  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+287  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+447    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+447    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+457    32700-772    V/uBleService©s onCharacteristicChanged data: FB A3 B3 3A 56 94 68 19 6D ED C3 FF
+457    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+467  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+467  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB A3 B3 3A 56 94 68 19 6D ED C3 FF
+587  32700-32700    V/uAbstractDeviceAdapter©s send data: FB E7 3B 39 53 7C 3B 51 BB AA 94 FF
+587  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB E7 3B 39 53 7C 3B 51 BB AA 94 FF
+597  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+597  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+597  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+597  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+597  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+617  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+617  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+747    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+747    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+747    32700-772    V/uBleService©s onCharacteristicChanged data: FB E7 3B 39 53 7C 3B 51 BB AA 94 FF
+747    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+757  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+757  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB E7 3B 39 53 7C 3B 51 BB AA 94 FF
+867  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 19 A3 3D 5B C4 C2 A9 CF 72 22 FF
+867  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 19 A3 3D 5B C4 C2 A9 CF 72 22 FF
+867  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+867  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+867  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+867  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+867  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+897  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+897  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+087    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+087    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+087    32700-772    V/uBleService©s onCharacteristicChanged data: FB 19 A3 3D 5B C4 C2 A9 CF 72 22 FF
+087    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+097  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+097  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 19 A3 3D 5B C4 C2 A9 CF 72 22 FF
+237  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 5E 2B 3C 59 AC 95 E1 1E 30 F3 FF
+237  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 5E 2B 3C 59 AC 95 E1 1E 30 F3 FF
+237  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+237  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+237  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+237  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+237  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+267  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+267  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+327  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 5E 2B 3C 59 AC 95 E1 1E 30 F3 FF
+327  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+337  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 5E 2B 3C 59 AC 95 E1 1E 30 F3 FF
+457  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 90 92 40 60 F4 1C 3A 31 F8 80 FF
+457  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 90 92 40 60 F4 1C 3A 31 F8 80 FF
+457  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+467  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+467    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+467    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+467    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+487  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+487  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+517  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+527  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 90 92 40 60 F4 1C 3A 31 F8 80 FF
+527  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+527  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+527  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 90 92 40 60 F4 1C 3A 31 F8 80 FF
+667  32700-32700    V/uAbstractDeviceAdapter©s send data: FB D4 1A 3F 5E DC EF 71 80 B5 51 FF
+667  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB D4 1A 3F 5E DC EF 71 80 B5 51 FF
+667  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+667  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+667  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+667  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+677  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+697  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+697  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+767    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+767    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+767    32700-772    V/uBleService©s onCharacteristicChanged data: FB D4 1A 3F 5E DC EF 71 80 B5 51 FF
+767    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+777  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+777  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB D4 1A 3F 5E DC EF 71 80 B5 51 FF
+907  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 6E 87 FC B5 2E BF 27 72 5D 0F FF
+917  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 6E 87 FC B5 2E BF 27 72 5D 0F FF
+917  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+917  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+917  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+927  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+927  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+947  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+947  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+107    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+107    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+117    32700-772    V/uBleService©s onCharacteristicChanged data: FB 6E 87 FC B5 2E BF 27 72 5D 0F FF
+117    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+127  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+127  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 6E 87 FC B5 2E BF 27 72 5D 0F FF
+257  32700-32700    V/uAbstractDeviceAdapter©s send data: FB A0 EE 00 BD 76 46 80 86 25 9D FF
+257  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB A0 EE 00 BD 76 46 80 86 25 9D FF
+257  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+257  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+257  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+257  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+257  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+297  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+297  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+347  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+347  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+357  32700-32714    V/uBleService©s onCharacteristicChanged data: FB A0 EE 00 BD 76 46 80 86 25 9D FF
+357  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+367  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+367  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB A0 EE 00 BD 76 46 80 86 25 9D FF
+497  32700-32700    V/uAbstractDeviceAdapter©s send data: FB E5 76 AA BA 5E 19 B8 D4 E2 6D FF
+497  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB E5 76 AA BA 5E 19 B8 D4 E2 6D FF
+497  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+497  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+707    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+707    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+707    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+717  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+717  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+787  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+787  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+807  32700-32714    V/uBleService©s onCharacteristicChanged data: FB E5 76 AA BA 5E 19 B8 D4 E2 6D FF
+807  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+807  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+807  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB E5 76 AA BA 5E 19 B8 D4 E2 6D FF
+937  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 16 DE 03 C2 A6 A0 10 E8 AA AA FF
+937  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 16 DE 03 C2 A6 A0 10 E8 AA AA FF
+937  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+937  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+937    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+937    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+937    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+977  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+977  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+977  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+977  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+987  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 16 DE 03 C2 A6 A0 10 E8 AA AA FF
+987  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+987  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+987  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 16 DE 03 C2 A6 A0 10 E8 AA AA FF
+107  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 5B 66 02 BF 8E 73 48 37 68 CC FF
+107  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 5B 66 02 BF 8E 73 48 37 68 CC FF
+117  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+117  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+117    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+117    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+117    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+137  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+137  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+247  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+247  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+257  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 5B 66 02 BF 8E 73 48 37 68 CC FF
+257  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+257  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+267  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 5B 66 02 BF 8E 73 48 37 68 CC FF
+387  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 8D CD 06 C7 D6 FA A0 4A 30 5A FF
+387  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 8D CD 06 C7 D6 FA A0 4A 30 5A FF
+387  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+387  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+387  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+387  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+387  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+427  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+427  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+487  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+487  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+487  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 8D CD 06 C7 D6 FA A0 4A 30 5A FF
+487  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+487  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+497  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 8D CD 06 C7 D6 FA A0 4A 30 5A FF
+637  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 0B B9 F3 A5 9E B0 76 4B CD F3 FF
+637  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 0B B9 F3 A5 9E B0 76 4B CD F3 FF
+637  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+637  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+637  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+637  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+637  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+657  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+657  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+717  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+717  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+717  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 0B B9 F3 A5 9E B0 76 4B CD F3 FF
+717  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+727  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+727  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 0B B9 F3 A5 9E B0 76 4B CD F3 FF
+857  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 3D 20 F8 AD E6 37 CF 5E 95 81 FF
+857  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 3D 20 F8 AD E6 37 CF 5E 95 81 FF
+857  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+857  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+867  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+867  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+867  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+887  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+887  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+937  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+937  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+937  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 3D 20 F8 AD E6 37 CF 5E 95 81 FF
+937  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+937  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+947  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 3D 20 F8 AD E6 37 CF 5E 95 81 FF
+077  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 81 A8 F6 AA CE 0A 07 AD 52 52 FF
+077  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 81 A8 F6 AA CE 0A 07 AD 52 52 FF
+077  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+077  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+087  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+087  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+087  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+107  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+107  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+147    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+147    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+147    32700-772    V/uBleService©s onCharacteristicChanged data: FB 81 A8 F6 AA CE 0A 07 AD 52 52 FF
+147    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+157  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+157  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 81 A8 F6 AA CE 0A 07 AD 52 52 FF
+297  32700-32700    V/uAbstractDeviceAdapter©s send data: FB B3 0F AA B2 16 92 5F C1 1A E0 FF
+297  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB B3 0F AA B2 16 92 5F C1 1A E0 FF
+297  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+297  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+297  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+297  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+297  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+327  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+327  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+367    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+367    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+367    32700-772    V/uBleService©s onCharacteristicChanged data: FB B3 0F AA B2 16 92 5F C1 1A E0 FF
+367    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+367  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+377  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB B3 0F AA B2 16 92 5F C1 1A E0 FF
+507  32700-32700    V/uAbstractDeviceAdapter©s send data: FB F8 97 F9 B0 FE 64 97 10 D8 B0 FF
+507  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB F8 97 F9 B0 FE 64 97 10 D8 B0 FF
+507  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+507  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+507  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+507  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+507  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+537  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+537  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+577    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+577    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+587    32700-772    V/uBleService©s onCharacteristicChanged data: FB F8 97 F9 B0 FE 64 97 10 D8 B0 FF
+587    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+587  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+597  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB F8 97 F9 B0 FE 64 97 10 D8 B0 FF
+737  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 76 83 E6 8E C6 1A 6D 10 75 4A FF
+737  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 76 83 E6 8E C6 1A 6D 10 75 4A FF
+737  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+737  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+737  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+737  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+737  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+757  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+757  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+797    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+797    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+797    32700-772    V/uBleService©s onCharacteristicChanged data: FB 76 83 E6 8E C6 1A 6D 10 75 4A FF
+797    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+797  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+807  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 76 83 E6 8E C6 1A 6D 10 75 4A FF
+927  32700-32700    V/uAbstractDeviceAdapter©s send data: FB BB 0B E5 8B AE ED A4 5F 32 1B FF
+927  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB BB 0B E5 8B AE ED A4 5F 32 1B FF
+927  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+927  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+927  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+927  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+937  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+947  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+947  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+007  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+007  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+017  32700-32714    V/uBleService©s onCharacteristicChanged data: FB BB 0B E5 8B AE ED A4 5F 32 1B FF
+017  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+017  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+027  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB BB 0B E5 8B AE ED A4 5F 32 1B FF
+167  32700-32700    V/uAbstractDeviceAdapter©s send data: FB EC 72 E9 93 F6 74 FD 73 FA A8 FF
+177  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB EC 72 E9 93 F6 74 FD 73 FA A8 FF
+177  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+177  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+177    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+177    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+177    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+197  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+197  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+227  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+227  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+227  32700-32714    V/uBleService©s onCharacteristicChanged data: FB EC 72 E9 93 F6 74 FD 73 FA A8 FF
+227  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+237  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+237  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB EC 72 E9 93 F6 74 FD 73 FA A8 FF
+357  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 31 AA E7 90 DE 47 35 C2 B7 79 FF
+357  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 31 AA E7 90 DE 47 35 C2 B7 79 FF
+357  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+367  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+367  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+367  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+367  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+387  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+387  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+437    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+437    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+437    32700-772    V/uBleService©s onCharacteristicChanged data: FB 31 AA E7 90 DE 47 35 C2 B7 79 FF
+437    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+447  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+457  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 31 AA E7 90 DE 47 35 C2 B7 79 FF
+577  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 24 57 DD 7E F0 00 0A 3D 14 A3 FF
+577  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 24 57 DD 7E F0 00 0A 3D 14 A3 FF
+577  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+577  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+587  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+587  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+597  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+597  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+627    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+627    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+627    32700-772    V/uBleService©s onCharacteristicChanged data: FB 24 57 DD 7E F0 00 0A 3D 14 A3 FF
+627    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+627  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+627  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 24 57 DD 7E F0 00 0A 3D 14 A3 FF
+747  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 69 DF DB 7B D8 D3 41 8C D1 73 FF
+757  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 69 DF DB 7B D8 D3 41 8C D1 73 FF
+757  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+757  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+757  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+757  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+757  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+777  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+777  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+807    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+807    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+817    32700-772    V/uBleService©s onCharacteristicChanged data: FB 69 DF DB 7B D8 D3 41 8C D1 73 FF
+817    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+817  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+817  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 69 DF DB 7B D8 D3 41 8C D1 73 FF
+927  32700-32700    V/uAbstractDeviceAdapter©s send data: FB FD 34 E0 63 03 F9 68 7F 62 37 FF
+937  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB FD 34 E0 63 03 F9 68 7F 62 37 FF
+937  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+937  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+937  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+937  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+937  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+957  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+957  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+017  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+017  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+027  32700-32713    V/uBleService©s onCharacteristicChanged data: FB FD 34 E0 63 03 F9 68 7F 62 37 FF
+027  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+027  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+037  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB FD 34 E0 63 03 F9 68 7F 62 37 FF
+167  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 42 BD DE 60 EB CB A0 CE 1F 08 FF
+167  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 42 BD DE 60 EB CB A0 CE 1F 08 FF
+167  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+167  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+177  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+177  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+177  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+207  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+207  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+227  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+227  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+227  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 42 BD DE 60 EB CB A0 CE 1F 08 FF
+227  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+227  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+227  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 42 BD DE 60 EB CB A0 CE 1F 08 FF
+347  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 74 24 E3 68 33 53 F9 E1 E7 95 FF
+357  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 74 24 E3 68 33 53 F9 E1 E7 95 FF
+357  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+357  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+367    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+367    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+367    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+387  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+387  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+417  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+417  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+417  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 74 24 E3 68 33 53 F9 E1 E7 95 FF
+417  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+427  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+427  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 74 24 E3 68 33 53 F9 E1 E7 95 FF
+557  32700-32700    V/uAbstractDeviceAdapter©s send data: FB B9 AC E1 65 1B 26 31 30 A5 66 FF
+557  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB B9 AC E1 65 1B 26 31 30 A5 66 FF
+557  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+557  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+557    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+557    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+557    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+587  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+587  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+657  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+657  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+657  32700-32713    V/uBleService©s onCharacteristicChanged data: FB B9 AC E1 65 1B 26 31 30 A5 66 FF
+667  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+667  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+677  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB B9 AC E1 65 1B 26 31 30 A5 66 FF
+797  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 05 87 2C EA E3 21 12 7C EE D0 FF
+797  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 05 87 2C EA E3 21 12 7C EE D0 FF
+797  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+797  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+807  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+807  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+807  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+817  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+817  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+887    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+887    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+887    32700-772    V/uBleService©s onCharacteristicChanged data: FB 05 87 2C EA E3 21 12 7C EE D0 FF
+887    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+897  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+897  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 05 87 2C EA E3 21 12 7C EE D0 FF
+037  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 4A 0F 2B E7 CB F4 49 CB AB A1 FF
+037  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 4A 0F 2B E7 CB F4 49 CB AB A1 FF
+037  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+037  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+047  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+047  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+047  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+097  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+097  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+137    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+137    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+147    32700-772    V/uBleService©s onCharacteristicChanged data: FB 4A 0F 2B E7 CB F4 49 CB AB A1 FF
+147    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+147  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+147  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 4A 0F 2B E7 CB F4 49 CB AB A1 FF
+277  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 7C 76 2F EF 13 7C A2 DF 73 2F FF
+287  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 7C 76 2F EF 13 7C A2 DF 73 2F FF
+287  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+287  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+287  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+287  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+287  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+307  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+307  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+347    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+347    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+357    32700-772    V/uBleService©s onCharacteristicChanged data: FB 7C 76 2F EF 13 7C A2 DF 73 2F FF
+357    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+357  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+367  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 7C 76 2F EF 13 7C A2 DF 73 2F FF
+507  32700-32700    V/uAbstractDeviceAdapter©s send data: FB C0 FE 2D ED AA 4E DA 2D 31 00 FF
+507  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB C0 FE 2D ED AA 4E DA 2D 31 00 FF
+507  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+507  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+507  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+507  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+507  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+527  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+527  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+557  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+557  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+557  32700-32713    V/uBleService©s onCharacteristicChanged data: FB C0 FE 2D ED AA 4E DA 2D 31 00 FF
+557  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+557  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+557  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB C0 FE 2D ED AA 4E DA 2D 31 00 FF
+677  32700-32700    V/uAbstractDeviceAdapter©s send data: FB F2 65 32 F4 43 D6 32 41 F9 8D FF
+687  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB F2 65 32 F4 43 D6 32 41 F9 8D FF
+687  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+687  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+687    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+687    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+687    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+697  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+697  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+747    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+747    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+747    32700-772    V/uBleService©s onCharacteristicChanged data: FB F2 65 32 F4 43 D6 32 41 F9 8D FF
+747    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+757  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+767  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB F2 65 32 F4 43 D6 32 41 F9 8D FF
+897  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 37 EE 30 F2 2B A9 6A 90 B6 5E FF
+907  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 37 EE 30 F2 2B A9 6A 90 B6 5E FF
+907  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+907  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+317    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+317    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+317    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+337  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+337  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+377  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+377  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+377  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 37 EE 30 F2 2B A9 6A 90 B6 5E FF
+377  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+387  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+387  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 37 EE 30 F2 2B A9 6A 90 B6 5E FF
+497  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 68 55 35 FA 73 30 C3 A3 7E EC FF
+497  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 68 55 35 FA 73 30 C3 A3 7E EC FF
+497  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+497  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+497    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+497    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+497    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+517  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+517  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+567  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+567  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+577  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 68 55 35 FA 73 30 C3 A3 7E EC FF
+577  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+577  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+577  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 68 55 35 FA 73 30 C3 A3 7E EC FF
+697  32700-32700    V/uAbstractDeviceAdapter©s send data: FB C2 7D 28 E3 E1 A5 6B 15 F7 CE FF
+707  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB C2 7D 28 E3 E1 A5 6B 15 F7 CE FF
+707  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+707  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+707    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+707    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+707    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+717  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+717  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+757  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+757  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+757  32700-32713    V/uBleService©s onCharacteristicChanged data: FB C2 7D 28 E3 E1 A5 6B 15 F7 CE FF
+757  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+757  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+757  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB C2 7D 28 E3 E1 A5 6B 15 F7 CE FF
+877  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 40 69 15 C1 A9 5B 41 16 94 68 FF
+887  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 40 69 15 C1 A9 5B 41 16 94 68 FF
+887  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+887  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+897    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+897    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+897    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+907  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+907  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+977  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+987  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+997  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 40 69 15 C1 A9 5B 41 16 94 68 FF
+997  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+997  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+007  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 40 69 15 C1 A9 5B 41 16 94 68 FF
+147  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 85 F1 13 BE 91 2E 79 65 51 39 FF
+147  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 85 F1 13 BE 91 2E 79 65 51 39 FF
+157  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+157  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+157  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+157  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+157  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+177  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+177  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+267  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+267  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+267  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 85 F1 13 BE 91 2E 79 65 51 39 FF
+267  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+277  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+277  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 85 F1 13 BE 91 2E 79 65 51 39 FF
+397  32700-32700    V/uAbstractDeviceAdapter©s send data: FB B7 58 18 C6 D9 B5 D1 78 19 C7 FF
+397  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB B7 58 18 C6 D9 B5 D1 78 19 C7 FF
+397  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+397  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+397    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+397    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+397    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+417  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+417  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+447  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+447  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+447  32700-32714    V/uBleService©s onCharacteristicChanged data: FB B7 58 18 C6 D9 B5 D1 78 19 C7 FF
+447  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+447  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+457  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB B7 58 18 C6 D9 B5 D1 78 19 C7 FF
+577  32700-32700    V/uAbstractDeviceAdapter©s send data: FB FC E0 16 C4 C1 88 09 C7 D6 97 FF
+577  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB FC E0 16 C4 C1 88 09 C7 D6 97 FF
+577  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+577  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+577  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+577  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+577  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+597  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+597  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+697  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+697  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+707  32700-32714    V/uBleService©s onCharacteristicChanged data: FB FC E0 16 C4 C1 88 09 C7 D6 97 FF
+707  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+717  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+717  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB FC E0 16 C4 C1 88 09 C7 D6 97 FF
+847  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 2D 48 1B CB 09 10 62 DA 9E 25 FF
+847  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 2D 48 1B CB 09 10 62 DA 9E 25 FF
+847  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+847  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+847  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+857  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+857  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+877  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+877  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+917  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+917  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+927  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 2D 48 1B CB 09 10 62 DA 9E 25 FF
+927  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+937  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+937  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 2D 48 1B CB 09 10 62 DA 9E 25 FF
+077  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 72 D0 19 C9 F1 E2 99 29 5C F6 FF
+077  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 72 D0 19 C9 F1 E2 99 29 5C F6 FF
+077  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+077  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+077    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+077    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+087    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+127  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+127  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+127  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 72 D0 19 C9 F1 E2 99 29 5C F6 FF
+127  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+127  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+127  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+127  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+127  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 72 D0 19 C9 F1 E2 99 29 5C F6 FF
+257  32700-32700    V/uAbstractDeviceAdapter©s send data: FB A4 37 1E D1 39 6A F2 3D 24 84 FF
+257  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB A4 37 1E D1 39 6A F2 3D 24 84 FF
+257  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+267  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+267    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+267    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+267    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+287  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+287  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+347  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+347  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+357  32700-32713    V/uBleService©s onCharacteristicChanged data: FB A4 37 1E D1 39 6A F2 3D 24 84 FF
+367  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+367  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+377  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB A4 37 1E D1 39 6A F2 3D 24 84 FF
+507  32700-32700    V/uAbstractDeviceAdapter©s send data: FB E8 BF 1C CE 21 3D 2A 8C E1 54 FF
+517  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB E8 BF 1C CE 21 3D 2A 8C E1 54 FF
+517  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+517  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+517  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+517  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+517  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+547  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+547  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+797  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+797  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+807  32700-32713    V/uBleService©s onCharacteristicChanged data: FB E8 BF 1C CE 21 3D 2A 8C E1 54 FF
+807  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+807  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+817  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB E8 BF 1C CE 21 3D 2A 8C E1 54 FF
+937  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 88 A5 09 4C 35 D2 44 81 C1 55 FF
+937  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 88 A5 09 4C 35 D2 44 81 C1 55 FF
+937  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+937  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+937  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+937  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+937  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+957  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+957  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+097  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+097  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+107  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 88 A5 09 4C 35 D2 44 81 C1 55 FF
+107  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+117  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+127  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 88 A5 09 4C 35 D2 44 81 C1 55 FF
+247  32700-32700    V/uAbstractDeviceAdapter©s send data: FB CC 2D 08 4A 1D A5 7C D0 7E 26 FF
+247  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB CC 2D 08 4A 1D A5 7C D0 7E 26 FF
+247  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+247  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+257  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+257  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+257  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+277  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+277  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+327  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32713    V/uBleService©s onCharacteristicChanged data: FB CC 2D 08 4A 1D A5 7C D0 7E 26 FF
+327  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+337  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB CC 2D 08 4A 1D A5 7C D0 7E 26 FF
+467  32700-32700    V/uAbstractDeviceAdapter©s send data: FB FE 94 0C 51 65 2C D5 E4 46 B4 FF
+467  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB FE 94 0C 51 65 2C D5 E4 46 B4 FF
+467  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+467  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+467    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+467    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+467    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+487  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+487  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+507  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32714    V/uBleService©s onCharacteristicChanged data: FB FE 94 0C 51 65 2C D5 E4 46 B4 FF
+517  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+527  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB FE 94 0C 51 65 2C D5 E4 46 B4 FF
+647  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 43 1D 0B 4F 4D AA 0C 33 04 85 FF
+647  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 43 1D 0B 4F 4D AA 0C 33 04 85 FF
+647  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+647  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+647    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+647    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+647    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+667  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+667  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+737  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+737  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+747  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 43 1D 0B 4F 4D AA 0C 33 04 85 FF
+747  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+747  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+757  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 43 1D 0B 4F 4D AA 0C 33 04 85 FF
+877  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 75 84 0F 57 95 86 65 46 CC 12 FF
+877  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 75 84 0F 57 95 86 65 46 CC 12 FF
+877  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+877  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+877  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+877  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+877  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+897  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+897  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+037  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+037  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+037  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 75 84 0F 57 95 86 65 46 CC 12 FF
+047  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+047  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+057  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 75 84 0F 57 95 86 65 46 CC 12 FF
+197  32700-32700    V/uAbstractDeviceAdapter©s send data: FB B9 0C 0E 54 7D 59 9D 95 89 E3 FF
+207  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB B9 0C 0E 54 7D 59 9D 95 89 E3 FF
+207  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+207  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+207    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+207    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+207    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+217  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+217  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+317  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+317  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+317  32700-32713    V/uBleService©s onCharacteristicChanged data: FB B9 0C 0E 54 7D 59 9D 95 89 E3 FF
+317  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+327  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB B9 0C 0E 54 7D 59 9D 95 89 E3 FF
+457  32700-32700    V/uAbstractDeviceAdapter©s send data: FB EB 73 12 5C C5 E0 F5 A9 51 71 FF
+457  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB EB 73 12 5C C5 E0 F5 A9 51 71 FF
+457  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+457  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+467  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+467  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+467  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+477  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+477  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+547  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+547  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+557  32700-32713    V/uBleService©s onCharacteristicChanged data: FB EB 73 12 5C C5 E0 F5 A9 51 71 FF
+557  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+567  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+567  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB EB 73 12 5C C5 E0 F5 A9 51 71 FF
+697  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 30 FC 10 59 AD B3 2D F7 0E 42 FF
+697  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 30 FC 10 59 AD B3 2D F7 0E 42 FF
+697  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+707  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+707    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+707    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+707    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+727  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+727  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+857  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+857  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+867  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 30 FC 10 59 AD B3 2D F7 0E 42 FF
+867  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+867  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+867  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 30 FC 10 59 AD B3 2D F7 0E 42 FF
+997  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 7C D6 5B DE 75 AF 0E 43 58 AC FF
+997  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 7C D6 5B DE 75 AF 0E 43 58 AC FF
+007  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+007  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+007    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+007    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+007    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+027  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+027  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+087  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+087  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+097  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 7C D6 5B DE 75 AF 0E 43 58 AC FF
+097  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+107  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+107  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 7C D6 5B DE 75 AF 0E 43 58 AC FF
+237  32700-32700    V/uAbstractDeviceAdapter©s send data: FB C1 5E 5A DB 5D 82 46 92 15 7D FF
+247  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB C1 5E 5A DB 5D 82 46 92 15 7D FF
+247  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+247  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+247  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+247  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+247  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+267  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+267  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+337  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+337  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+337  32700-32714    V/uBleService©s onCharacteristicChanged data: FB C1 5E 5A DB 5D 82 46 92 15 7D FF
+337  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+347  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+347  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB C1 5E 5A DB 5D 82 46 92 15 7D FF
+467  32700-32700    V/uAbstractDeviceAdapter©s send data: FB F3 C5 5E E3 A5 09 9F A6 DD 0A FF
+467  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB F3 C5 5E E3 A5 09 9F A6 DD 0A FF
+467  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+467  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+707  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+707  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+707  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+727  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+727  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+817    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+817    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+817    32700-772    V/uBleService©s onCharacteristicChanged data: FB F3 C5 5E E3 A5 09 9F A6 DD 0A FF
+817    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+827  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+827  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB F3 C5 5E E3 A5 09 9F A6 DD 0A FF
+947  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 4B 6F 57 D6 2D 28 B6 30 90 1E FF
+957  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 4B 6F 57 D6 2D 28 B6 30 90 1E FF
+957  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+957  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+957  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+957  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+957  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+967  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+967  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+027  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+027  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+027  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 4B 6F 57 D6 2D 28 B6 30 90 1E FF
+027  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+027  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+027  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 4B 6F 57 D6 2D 28 B6 30 90 1E FF
+147  32700-32700    V/uAbstractDeviceAdapter©s send data: FB C9 5A 44 B4 F5 DD 8B 31 2D B8 FF
+147  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB C9 5A 44 B4 F5 DD 8B 31 2D B8 FF
+147  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+147  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+147    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+147    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+147    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+167  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+167  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+247  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+247  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+257  32700-32713    V/uBleService©s onCharacteristicChanged data: FB C9 5A 44 B4 F5 DD 8B 31 2D B8 FF
+257  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+257  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+257  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB C9 5A 44 B4 F5 DD 8B 31 2D B8 FF
+377  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 0D E3 42 B2 DD B0 C3 7F EA 88 FF
+387  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 0D E3 42 B2 DD B0 C3 7F EA 88 FF
+387  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+387  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+387  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+387  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+387  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+407  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+407  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+607  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+607  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+607  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 0D E3 42 B2 DD B0 C3 7F EA 88 FF
+607  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+607  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+607  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 0D E3 42 B2 DD B0 C3 7F EA 88 FF
+737  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 3F 4A 47 B9 25 38 1C 93 B2 16 FF
+737  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 3F 4A 47 B9 25 38 1C 93 B2 16 FF
+737  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+737  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+747  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+747  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+747  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+777  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+777  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+227  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+227  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+227  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 3F 4A 47 B9 25 38 1C 93 B2 16 FF
+227  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+237  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+237  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 3F 4A 47 B9 25 38 1C 93 B2 16 FF
+357  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 84 D2 45 B7 0D 0B 54 E2 6F E7 FF
+357  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 84 D2 45 B7 0D 0B 54 E2 6F E7 FF
+357  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+357  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+367  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+367  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+367  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+387  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+387  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+617    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+617    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+617    32700-772    V/uBleService©s onCharacteristicChanged data: FB 84 D2 45 B7 0D 0B 54 E2 6F E7 FF
+617    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+627  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+627  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 84 D2 45 B7 0D 0B 54 E2 6F E7 FF
+767  32700-32700    V/uAbstractDeviceAdapter©s send data: FB B6 39 4A BF 55 92 AC F5 37 75 FF
+767  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB B6 39 4A BF 55 92 AC F5 37 75 FF
+767  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+767  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+767  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+767  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+767  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+787  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+787  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+177  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+177  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+187  32700-32714    V/uBleService©s onCharacteristicChanged data: FB B6 39 4A BF 55 92 AC F5 37 75 FF
+187  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+187  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+197  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB B6 39 4A BF 55 92 AC F5 37 75 FF
+337  32700-32700    V/uAbstractDeviceAdapter©s send data: FB FA C1 48 BC 3D 65 E4 44 F5 45 FF
+347  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB FA C1 48 BC 3D 65 E4 44 F5 45 FF
+347  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+347  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+347    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+347    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+347    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+377  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+377  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+607  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+607  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+617  32700-32713    V/uBleService©s onCharacteristicChanged data: FB FA C1 48 BC 3D 65 E4 44 F5 45 FF
+617  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+617  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+627  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB FA C1 48 BC 3D 65 E4 44 F5 45 FF
+757  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 2C 29 4D C4 85 EC 3C 58 BD D3 FF
+757  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 2C 29 4D C4 85 EC 3C 58 BD D3 FF
+757  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+757  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+757    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+757    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+757    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+787  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+787  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+987  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+987  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+997  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 2C 29 4D C4 85 EC 3C 58 BD D3 FF
+997  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+997  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+007  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 2C 29 4D C4 85 EC 3C 58 BD D3 FF
+127  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 71 B1 4B C1 6D BF 74 A6 7A A4 FF
+127  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 71 B1 4B C1 6D BF 74 A6 7A A4 FF
+127  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+127  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+137    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+137    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+137    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+167  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+167  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+437  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+437  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+447  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 71 B1 4B C1 6D BF 74 A6 7A A4 FF
+447  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+457  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+457  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 71 B1 4B C1 6D BF 74 A6 7A A4 FF
+587  32700-32700    V/uAbstractDeviceAdapter©s send data: FB EF 9C 38 9F 35 75 4A A7 17 3E FF
+597  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB EF 9C 38 9F 35 75 4A A7 17 3E FF
+597  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+597  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+607    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+607    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+607    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+627  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+627  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+947  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+947  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+947  32700-32714    V/uBleService©s onCharacteristicChanged data: FB EF 9C 38 9F 35 75 4A A7 17 3E FF
+947  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+947  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+947  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB EF 9C 38 9F 35 75 4A A7 17 3E FF
+077  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 34 25 37 9D 1D 48 82 F6 D4 0E FF
+077  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 34 25 37 9D 1D 48 82 F6 D4 0E FF
+077  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+087  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+087  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+087  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+087  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+117  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+117  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+507    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+507    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+517    32700-772    V/uBleService©s onCharacteristicChanged data: FB 34 25 37 9D 1D 48 82 F6 D4 0E FF
+517    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+527  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 34 25 37 9D 1D 48 82 F6 D4 0E FF
+657  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 65 8C 3B A5 65 CF DA 0A 9D 9C FF
+657  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 65 8C 3B A5 65 CF DA 0A 9D 9C FF
+657  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+657  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+657  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+657  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+657  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+677  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+677  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+847  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+847  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+847  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 65 8C 3B A5 65 CF DA 0A 9D 9C FF
+847  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+077  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+077  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 65 8C 3B A5 65 CF DA 0A 9D 9C FF
+197  32700-32700    V/uAbstractDeviceAdapter©s send data: FB AA 14 3A A2 4D A2 12 58 5A 6D FF
+197  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB AA 14 3A A2 4D A2 12 58 5A 6D FF
+197  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+197  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+207  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+207  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+207  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+247  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+247  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+407  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+407  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+417  32700-32713    V/uBleService©s onCharacteristicChanged data: FB AA 14 3A A2 4D A2 12 58 5A 6D FF
+417  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+417  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+417  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB AA 14 3A A2 4D A2 12 58 5A 6D FF
+547  32700-32700    V/uAbstractDeviceAdapter©s send data: FB DC 7B 3E AA 95 29 6B 6C 22 AA FF
+557  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB DC 7B 3E AA 95 29 6B 6C 22 AA FF
+557  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+557  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+557  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+557  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+557  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+577  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+577  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+667    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+667    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+677    32700-772    V/uBleService©s onCharacteristicChanged data: FB DC 7B 3E AA 95 29 6B 6C 22 AA FF
+677    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+677  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+687  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB DC 7B 3E AA 95 29 6B 6C 22 AA FF
+817  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 20 04 3D A7 7D FC A2 BB DF CB FF
+827  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 20 04 3D A7 7D FC A2 BB DF CB FF
+827  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+827  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+827  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+827  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+827  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+847  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+847  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+097  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+097  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+107  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 20 04 3D A7 7D FC A2 BB DF CB FF
+107  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+117  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+117  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 20 04 3D A7 7D FC A2 BB DF CB FF
+247  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 52 6B 41 AF C5 83 AA CE A7 59 FF
+257  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 52 6B 41 AF C5 83 AA CE A7 59 FF
+257  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+257  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+257  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+257  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+257  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+277  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+277  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+517  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 52 6B 41 AF C5 83 AA CE A7 59 FF
+517  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+527  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+527  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 52 6B 41 AF C5 83 AA CE A7 59 FF
+657  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 97 F3 3F AC AD 56 33 1D 65 2A FF
+657  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 97 F3 3F AC AD 56 33 1D 65 2A FF
+657  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+657  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+657  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+657  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+657  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+677  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+677  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+697    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+697    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+697    32700-772    V/uBleService©s onCharacteristicChanged data: FB 97 F3 3F AC AD 56 33 1D 65 2A FF
+697    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+707  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+707  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 97 F3 3F AC AD 56 33 1D 65 2A FF
+827  32700-32700    V/uAbstractDeviceAdapter©s send data: FB E3 CD 8A 31 76 52 14 69 AE 94 FF
+827  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB E3 CD 8A 31 76 52 14 69 AE 94 FF
+827  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+827  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+827  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+827  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+827  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+847  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+847  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+927    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+927    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+937    32700-772    V/uBleService©s onCharacteristicChanged data: FB E3 CD 8A 31 76 52 14 69 AE 94 FF
+937    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+937  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+947  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB E3 CD 8A 31 76 52 14 69 AE 94 FF
+067  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 28 56 89 2F 5E 25 4C B8 6B 65 FF
+067  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 28 56 89 2F 5E 25 4C B8 6B 65 FF
+067  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+077  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+077  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+077  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+077  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+107  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+107  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+187    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+187    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+197    32700-772    V/uBleService©s onCharacteristicChanged data: FB 28 56 89 2F 5E 25 4C B8 6B 65 FF
+197    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+207  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+207  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 28 56 89 2F 5E 25 4C B8 6B 65 FF
+327  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 5A BD 8D 36 A6 AC A4 CB 33 F3 FF
+327  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 5A BD 8D 36 A6 AC A4 CB 33 F3 FF
+327  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+327  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+327  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+327  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+327  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+357  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+357  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+407  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+407  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+417  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 5A BD 8D 36 A6 AC A4 CB 33 F3 FF
+417  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+417  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+427  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 5A BD 8D 36 A6 AC A4 CB 33 F3 FF
+547  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 9F 45 8C 34 8E 7F DC 1A F1 C3 FF
+547  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 9F 45 8C 34 8E 7F DC 1A F1 C3 FF
+547  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+547  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+547  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+547  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+547  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+577  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+577  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+697    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+697    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+697    32700-772    V/uBleService©s onCharacteristicChanged data: FB 9F 45 8C 34 8E 7F DC 1A F1 C3 FF
+707    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+707  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+707  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 9F 45 8C 34 8E 7F DC 1A F1 C3 FF
+837  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 8E B8 90 FC 3E 48 AB 43 33 83 FF
+847  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 8E B8 90 FC 3E 48 AB 43 33 83 FF
+847  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+847  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+847  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+847  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+847  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+877  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+877  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+997  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+997  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+997  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 8E B8 90 FC 3E 48 AB 43 33 83 FF
+997  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+007  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+017  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 8E B8 90 FC 3E 48 AB 43 33 83 FF
+137  32700-32700    V/uAbstractDeviceAdapter©s send data: FB D3 40 8F F9 26 1B E3 92 F0 53 FF
+147  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB D3 40 8F F9 26 1B E3 92 F0 53 FF
+147  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+147  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+147    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+147    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+147    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+167  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+167  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+257  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+267  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+267  32700-32714    V/uBleService©s onCharacteristicChanged data: FB D3 40 8F F9 26 1B E3 92 F0 53 FF
+277  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+277  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+277  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB D3 40 8F F9 26 1B E3 92 F0 53 FF
+407  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 05 A8 93 01 6F A2 3B A6 B8 E1 FF
+417  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 05 A8 93 01 6F A2 3B A6 B8 E1 FF
+417  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+417  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+417    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+417    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+417    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+447  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+447  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+517  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+517  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+527  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 05 A8 93 01 6F A2 3B A6 B8 E1 FF
+527  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+527  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+537  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 05 A8 93 01 6F A2 3B A6 B8 E1 FF
+667  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 49 30 92 FE 56 75 73 F4 75 B2 FF
+667  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 49 30 92 FE 56 75 73 F4 75 B2 FF
+667  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+667  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+677    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+677    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+677    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+697  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+697  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+877  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+877  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+877  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 49 30 92 FE 56 75 73 F4 75 B2 FF
+887  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+887  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+897  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 49 30 92 FE 56 75 73 F4 75 B2 FF
+027  32700-32700    V/uAbstractDeviceAdapter©s send data: FB C7 1B 7F DC 1E 2B 49 F5 12 4C FF
+027  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB C7 1B 7F DC 1E 2B 49 F5 12 4C FF
+027  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+027  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+027  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+027  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+027  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+057  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+057  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+117    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+117    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+117    32700-772    V/uBleService©s onCharacteristicChanged data: FB C7 1B 7F DC 1E 2B 49 F5 12 4C FF
+117    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+127  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+127  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB C7 1B 7F DC 1E 2B 49 F5 12 4C FF
+247  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 0C A4 7D DA 06 FE 80 44 D0 1C FF
+247  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 0C A4 7D DA 06 FE 80 44 D0 1C FF
+247  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+247  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+247  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+257  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+257  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+287  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+287  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+437  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+437  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+447  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 0C A4 7D DA 06 FE 80 44 D0 1C FF
+447  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+447  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+457  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 0C A4 7D DA 06 FE 80 44 D0 1C FF
+577  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 3E 0B 82 E2 4E 85 D9 58 98 AA FF
+587  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 3E 0B 82 E2 4E 85 D9 58 98 AA FF
+587  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+587  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+587  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+587  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+587  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+607  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+607  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+647  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+647  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+647  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 3E 0B 82 E2 4E 85 D9 58 98 AA FF
+647  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+647  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+647  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 3E 0B 82 E2 4E 85 D9 58 98 AA FF
+777  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 83 93 80 DF 36 58 11 A6 55 7B FF
+787  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 83 93 80 DF 36 58 11 A6 55 7B FF
+787  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+787  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+787  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+787  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+787  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+807  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+807  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+867  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+867  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+867  32700-32713    V/uBleService©s onCharacteristicChanged data: FB 83 93 80 DF 36 58 11 A6 55 7B FF
+867  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+867  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+877  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 83 93 80 DF 36 58 11 A6 55 7B FF
+997  32700-32700    V/uAbstractDeviceAdapter©s send data: FB B4 FA 84 E7 7E DF 69 BA 1D 09 FF
+997  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB B4 FA 84 E7 7E DF 69 BA 1D 09 FF
+997  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+997  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+997    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+997    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+007    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+017  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+017  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+077  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+077  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+077  32700-32714    V/uBleService©s onCharacteristicChanged data: FB B4 FA 84 E7 7E DF 69 BA 1D 09 FF
+077  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+087  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+097  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB B4 FA 84 E7 7E DF 69 BA 1D 09 FF
+227  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 9A B2 6F C1 A2 51 13 B1 D6 5B FF
+227  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 9A B2 6F C1 A2 51 13 B1 D6 5B FF
+227  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+237  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+527  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+527  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+537  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+547  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+547  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+617  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+617  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+627  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 9A B2 6F C1 A2 51 13 B1 D6 5B FF
+627  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+637  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+637  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 9A B2 6F C1 A2 51 13 B1 D6 5B FF
+757  32700-32700    V/uAbstractDeviceAdapter©s send data: FB AC D1 42 AC 68 35 C7 D0 6E 83 FF
+757  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB AC D1 42 AC 68 35 C7 D0 6E 83 FF
+757  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+757  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+757    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+757    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+757    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+777  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+777  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+827    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+827    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+827    32700-772    V/uBleService©s onCharacteristicChanged data: FB AC D1 42 AC 68 35 C7 D0 6E 83 FF
+827    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+837  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+837  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB AC D1 42 AC 68 35 C7 D0 6E 83 FF
+957  32700-32700    V/uAbstractDeviceAdapter©s send data: FB F1 59 41 A9 50 08 AA 1E 2C 54 FF
+957  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB F1 59 41 A9 50 08 AA 1E 2C 54 FF
+957  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+957  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+957  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+957  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+957  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+997  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+997  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+007    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+007    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+017    32700-772    V/uBleService©s onCharacteristicChanged data: FB F1 59 41 A9 50 08 AA 1E 2C 54 FF
+017    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+017  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+017  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB F1 59 41 A9 50 08 AA 1E 2C 54 FF
+147  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 23 C1 45 B1 98 8F 57 32 F4 E1 FF
+147  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 23 C1 45 B1 98 8F 57 32 F4 E1 FF
+147  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+147  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+157  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+157  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+157  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+177  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+177  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+257  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+257  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+267  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 23 C1 45 B1 98 8F 57 32 F4 E1 FF
+277  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+277  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+277  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 23 C1 45 B1 98 8F 57 32 F4 E1 FF
+407  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 68 49 44 AE 80 62 8F 81 B1 B2 FF
+417  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 68 49 44 AE 80 62 8F 81 B1 B2 FF
+417  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+417  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+417    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+417    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+417    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+437  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+437  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+667  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+667  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+677  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 68 49 44 AE 80 62 8F 81 B1 B2 FF
+677  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+687  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+687  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 68 49 44 AE 80 62 8F 81 B1 B2 FF
+807  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 99 B0 48 B6 C8 E9 E7 94 79 40 FF
+807  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 99 B0 48 B6 C8 E9 E7 94 79 40 FF
+807  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+807  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+807  32700-32713    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+817  32700-32713    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+817  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+837  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+837  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+947    32700-772    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+947    32700-772    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+957    32700-772    V/uBleService©s onCharacteristicChanged data: FB 99 B0 48 B6 C8 E9 E7 94 79 40 FF
+957    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+967  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+967  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 99 B0 48 B6 C8 E9 E7 94 79 40 FF
+097  32700-32700    V/uAbstractDeviceAdapter©s send data: FB DE 38 47 B3 B0 BC 1F E3 36 11 FF
+097  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB DE 38 47 B3 B0 BC 1F E3 36 11 FF
+097  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+097  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+097  32700-32714    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+097  32700-32714    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+107  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+127  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+127  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+307  32700-32713    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+307  32700-32713    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+317  32700-32713    V/uBleService©s onCharacteristicChanged data: FB DE 38 47 B3 B0 BC 1F E3 36 11 FF
+317  32700-32713    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+327  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+327  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB DE 38 47 B3 B0 BC 1F E3 36 11 FF
+457  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 10 A0 4B BB F8 43 78 F7 FE 9E FF
+457  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 10 A0 4B BB F8 43 78 F7 FE 9E FF
+457  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+457  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+467    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+467    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+467    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+487  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+487  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+587  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+587  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+597  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 10 A0 4B BB F8 43 78 F7 FE 9E FF
+597  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+597  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+597  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 10 A0 4B BB F8 43 78 F7 FE 9E FF
+717  32700-32700    V/uAbstractDeviceAdapter©s send data: FB 55 28 4A B9 E0 16 B0 45 BC 6F FF
+717  32700-32700    V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,FB 55 28 4A B9 E0 16 B0 45 BC 6F FF
+717  32700-32700    V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+717  32700-32700    D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+727    32700-772    D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+727    32700-772    V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+727    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+747  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_WRITE
+747  32700-32700    V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+827  32700-32714    D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+837  32700-32714    V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+837  32700-32714    V/uBleService©s onCharacteristicChanged data: FB 55 28 4A B9 E0 16 B0 45 BC 6F FF
+837  32700-32714    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+847  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_DATA_NOTIFY
+847  32700-32700    V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,FB 55 28 4A B9 E0 16 B0 45 BC 6F FF
+687  32700-32700    V/uBleService©s disconnect B4:99:4C:4C:EE:EF
+687  32700-32700    V/uBleGatt©s Device disconnect.
+687  32700-32700    D/BluetoothGatt©s cancelOpen() - device: B4:99:4C:4C:EE:EF
+707    32700-772    D/BluetoothGatt©s onClientConnectionState() - status=0 clientIf=5 device=B4:99:4C:4C:EE:EF
+707    32700-772    V/uBleService©s Disconnected from GATT server.
+707    32700-772    V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF
+727  32700-32700    V/uBleService©s Service Call Back on Action      .ACTION_GATT_DISCONNECTED
+727  32700-32700    V/uBleDeviceAdapter©s onDisconnected B4:99:4C:4C:EE:EF,0
+727  32700-32700    V/uBleService©s close B4:99:4C:4C:EE:EF
+727  32700-32700    V/uBleGatt©s Device close.
+727  32700-32700    D/BluetoothGatt©s close()
+727  32700-32700    D/BluetoothGatt©s unregisterApp() - mClientIf=5

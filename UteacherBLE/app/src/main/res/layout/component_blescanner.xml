@@ -1,0 +1,27 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <ProgressBar
+        android:id="@+id/id_scanning_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/id_scan_status"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/id_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</merge>
