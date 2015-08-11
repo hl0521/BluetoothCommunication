@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".TestActivity.SimpleAdapterActivity"
+            android:name=".TestActivity.SimpleProtocolActivity"
             android:label="@string/title_activity_simple_protocol" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

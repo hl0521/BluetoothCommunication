@@ -132,7 +132,7 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     tvScreen.append("Device disconnected\n");
                 }
             }
-        }, 30000);
+        }, 300000);
 
     }
 

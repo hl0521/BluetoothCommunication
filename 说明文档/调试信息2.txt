@@ -1,0 +1,216 @@
+08-11 600    /? D/dalvikvm©s Late-enabling CheckJNI
+08-11 670       V/uBleService©s Bind service on device
+08-11 680       D/dalvikvm©s GetMethodID: not returning static method Landroid/os/Process;.getTotalMemory ()J
+08-11 680       D/dalvikvm©s GetMethodID: not returning static method Landroid/os/Process;.getFreeMemory ()J
+08-11 710       V/uBleService©s Register service :android.app.Application
+08-11 710       D/BluetoothAdapter©s startLeScan(): null
+08-11 730       D/BluetoothAdapter©s onClientRegistered() - status=0 clientIf=5
+08-11 730       V/uBleScanner©s StartLeScan.
+08-11 760       I/Adreno-EGL©s <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build:  ()
+    OpenGL ES Shader Compiler Version: E031.24.00.15
+    Build Date: 04/21/15 Tue
+    Local Branch:
+    Remote Branch:
+    Local Patches:
+    Reconstruct Branch:
+08-11 810       D/OpenGLRenderer©s Enabling debug mode 0
+08-11 820       V/uBleService©s Service connected
+08-11 830       V/uBleScanner©s onLeScan device scanned, address B4:99:4C:4C:EE:EF, name Tv221u-3
+08-11 870       I/Timeline©s Timeline: Activity_idle id: android.os.BinderProxy@42233408 time:105424108
+08-11 730       V/uBleScanner©s StopLeScan.
+08-11 730       D/BluetoothAdapter©s stopLeScan()
+08-11 090       W/Toast©s From com.uteacher.www.uteacherble, go ahead.
+08-11 110       D/BluetoothGatt©s connect() - device: B4:99:4C:4C:EE:EF, auto: false
+08-11 110       D/BluetoothGatt©s registerApp()
+08-11 110       D/BluetoothGatt©s registerApp() - UUID=b8e68acf-0c03-41bf-b32e-97deeab07817
+08-11 110       D/BluetoothGatt©s onClientRegistered() - status=0 clientIf=5
+08-11 110       V/uBleGatt©s Trying to create a new connection: B4:99:4C:4C:EE:EF
+08-11 290       D/BluetoothGatt©s onClientConnectionState() - status=0 clientIf=5 device=B4:99:4C:4C:EE:EF
+08-11 290       V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF
+08-11 290       V/uBleService©s Connected to GATT server.
+08-11 290       D/BluetoothGatt©s discoverServices() - device: B4:99:4C:4C:EE:EF
+08-11 290       V/uBleService©s Attempting to start service discovery.
+08-11 300       V/uBleService©s Service Call Back on Action com.uteacher.www.uteacherble.ACTION_GATT_CONNECTED
+08-11 300       V/uBleDeviceAdapter©s onConnected B4:99:4C:4C:EE:EF,0
+08-11 300       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000180a-0000-1000-8000-00805f9b34fb
+08-11 300       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000180f-0000-1000-8000-00805f9b34fb
+08-11 300       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe0-0000-1000-8000-00805f9b34fb
+08-11 310       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe5-0000-1000-8000-00805f9b34fb
+08-11 310       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000fff0-0000-1000-8000-00805f9b34fb
+08-11 310       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd0-0000-1000-8000-00805f9b34fb
+08-11 310       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc0-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb0-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ffa0-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000ff90-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000fc60-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetService() - Device=B4:99:4C:4C:EE:EF UUID=0000fe00-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a23-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a26-0000-1000-8000-00805f9b34fb
+08-11 320       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a29-0000-1000-8000-00805f9b34fb
+08-11 330       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=00002a19-0000-1000-8000-00805f9b34fb
+08-11 330       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+08-11 330       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb
+08-11 330       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff1-0000-1000-8000-00805f9b34fb
+08-11 330       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff2-0000-1000-8000-00805f9b34fb
+08-11 330       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff3-0000-1000-8000-00805f9b34fb
+08-11 330       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff4-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff5-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff6-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff7-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff8-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fff9-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd1-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd2-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd3-0000-1000-8000-00805f9b34fb
+08-11 340       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffd4-0000-1000-8000-00805f9b34fb
+08-11 350       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc1-0000-1000-8000-00805f9b34fb
+08-11 350       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffc2-0000-1000-8000-00805f9b34fb
+08-11 350       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb1-0000-1000-8000-00805f9b34fb
+08-11 350       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb2-0000-1000-8000-00805f9b34fb
+08-11 350       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb3-0000-1000-8000-00805f9b34fb
+08-11 350       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffb4-0000-1000-8000-00805f9b34fb
+08-11 350       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffa2-0000-1000-8000-00805f9b34fb
+08-11 360       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ffa1-0000-1000-8000-00805f9b34fb
+08-11 360       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff91-0000-1000-8000-00805f9b34fb
+08-11 360       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff92-0000-1000-8000-00805f9b34fb
+08-11 360       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff93-0000-1000-8000-00805f9b34fb
+08-11 360       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff94-0000-1000-8000-00805f9b34fb
+08-11 370       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff95-0000-1000-8000-00805f9b34fb
+08-11 370       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff96-0000-1000-8000-00805f9b34fb
+08-11 370       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff97-0000-1000-8000-00805f9b34fb
+08-11 370       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff98-0000-1000-8000-00805f9b34fb
+08-11 370       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff99-0000-1000-8000-00805f9b34fb
+08-11 370       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000ff9a-0000-1000-8000-00805f9b34fb
+08-11 370       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fc64-0000-1000-8000-00805f9b34fb
+08-11 380       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe01-0000-1000-8000-00805f9b34fb
+08-11 380       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe02-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe03-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe04-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe05-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetCharacteristic() - Device=B4:99:4C:4C:EE:EF UUID=0000fe06-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 390       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 400       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 410       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 410       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 410       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 410       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 410       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 410       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 420       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 420       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 420       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 420       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 420       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 420       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 430       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 430       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 430       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 440       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002902-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 450       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 460       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 460       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 460       D/BluetoothGatt©s onGetDescriptor() - Device=B4:99:4C:4C:EE:EF UUID=00002901-0000-1000-8000-00805f9b34fb
+08-11 460       D/BluetoothGatt©s onSearchComplete() = Device=B4:99:4C:4C:EE:EF Status=0
+08-11 460       V/uBleService©s onServicesDiscovered received: 0
+08-11 460       V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF
+08-11 460       V/uBleService©s Service Call Back on Action com.uteacher.www.uteacherble.ACTION_GATT_SERVICES_DISCOVERED
+08-11 460       V/uBleDeviceAdapter©s onServiceDiscovered B4:99:4C:4C:EE:EF,0
+08-11 470       V/uBleDeviceAdapter©s enableDataNotify 0000ffe0-0000-1000-8000-00805f9b34fb,0000ffe4-0000-1000-8000-00805f9b34fb
+08-11 470       V/uBleService©s enableNotify: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+08-11 470       D/BluetoothGatt©s setCharacteristicNotification() - uuid: 0000ffe4-0000-1000-8000-00805f9b34fb enable: true
+08-11 470       V/uBleGatt©s writeDescriptor 00002902-0000-1000-8000-00805f9b34fb
+08-11 470       D/BluetoothGatt©s writeDescriptor() - uuid: 00002902-0000-1000-8000-00805f9b34fb
+08-11 480       V/uBleDeviceAdapter©s enablePasswordNotify 0000ffc0-0000-1000-8000-00805f9b34fb,0000ffc2-0000-1000-8000-00805f9b34fb
+08-11 480       V/uBleService©s enableNotify: B4:99:4C:4C:EE:EF,0000ffc2-0000-1000-8000-00805f9b34fb
+08-11 480       D/BluetoothGatt©s setCharacteristicNotification() - uuid: 0000ffc2-0000-1000-8000-00805f9b34fb enable: true
+08-11 480       V/uBleGatt©s writeDescriptor 00002902-0000-1000-8000-00805f9b34fb
+08-11 480       D/BluetoothGatt©s writeDescriptor() - uuid: 00002902-0000-1000-8000-00805f9b34fb
+08-11 530       D/BluetoothGatt©s onDescriptorWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+08-11 620       V/uAbstractProtocolConnection©s startConnection -64,0
+08-11 620       V/uAbstractProtocolConnection©s sendApplicationData CONNECT,CTRL
+08-11 620       V/uAbstractProtocolQueue©s send packet uProtocolPacket@type:0@operation:-64@error:0@data:null
+08-11 620       V/uAbstractProtocolQueue©s send sequence 0
+08-11 720       V/uAbstractProtocolQueue©s sendHandler data 04 00 20 C0 00 21
+08-11 730       V/uAbstractDeviceAdapter©s send data: 04 00 20 C0 00 21
+08-11 730       V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,04 00 20 C0 00 21
+08-11 730       V/uBleService©s write: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+08-11 740       D/BluetoothGatt©s writeCharacteristic() - uuid: 0000ffe9-0000-1000-8000-00805f9b34fb
+08-11 740       D/BluetoothGatt©s onCharacteristicWrite() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe9-0000-1000-8000-00805f9b34fb Status=0
+08-11 750       V/uBleService©s onCharacteristicWrite received: 0000ffe9-0000-1000-8000-00805f9b34fb,0
+08-11 750       V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb
+08-11 750       V/uBleService©s Service Call Back on Action com.uteacher.www.uteacherble.ACTION_DATA_WRITE
+08-11 750       V/uBleDeviceAdapter©s onDataWrite B4:99:4C:4C:EE:EF,0000ffe9-0000-1000-8000-00805f9b34fb,0
+08-11 820       D/BluetoothGatt©s onNotify() - Device=B4:99:4C:4C:EE:EF UUID=0000ffe4-0000-1000-8000-00805f9b34fb
+08-11 830       V/uBleService©s onCharacteristicChanged received: 0000ffe4-0000-1000-8000-00805f9b34fb
+08-11 830       V/uBleService©s onCharacteristicChanged data: 00 00 00 00 00 00 00 00 00 00 00 00
+08-11 830       V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb
+08-11 840       V/uBleService©s Service Call Back on Action com.uteacher.www.uteacherble.ACTION_DATA_NOTIFY
+08-11 840       V/uBleDeviceAdapter©s onDataNotify B4:99:4C:4C:EE:EF,0000ffe4-0000-1000-8000-00805f9b34fb,00 00 00 00 00 00 00 00 00 00 00 00
+08-11 850       V/uAbstractDeviceAdapter©s receive data: 00 00 00 00 00 00 00 00 00 00 00 00
+08-11 850       V/uAbstractProtocolQueue©s receive data 00 00 00 00 00 00 00 00 00 00 00 00
+08-11 850       W/System.err©s com.uteacher.www.uteacherble.uProtocol.Exception.uPacketLengthError
+08-11 860       W/System.err©s at com.uteacher.www.uteacherble.uProtocol.uAbstractProtocolStack.parseByte(uAbstractProtocolStack.java:116)
+08-11 860       W/System.err©s at com.uteacher.www.uteacherble.uProtocol.Queue.uAbstractProtocolQueue.receive(uAbstractProtocolQueue.java:97)
+08-11 860       W/System.err©s at com.uteacher.www.uteacherble.uDeviceAdapter.uAbstractDeviceAdapter.receive(uAbstractDeviceAdapter.java:37)
+08-11 860       W/System.err©s at com.uteacher.www.uteacherble.uDeviceAdapter.uBleDeviceAdapter.onDataNotify(uBleDeviceAdapter.java:415)
+08-11 860       W/System.err©s at com.uteacher.www.uteacherble.uBluetooth.uBleService$3.onReceive(uBleService.java:220)
+08-11 860       W/System.err©s at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:761)
+08-11 860       W/System.err©s at android.os.Handler.handleCallback(Handler.java:733)
+08-11 860       W/System.err©s at android.os.Handler.dispatchMessage(Handler.java:95)
+08-11 860       W/System.err©s at android.os.Looper.loop(Looper.java:136)
+08-11 860       W/System.err©s at android.app.ActivityThread.main(ActivityThread.java:5047)
+08-11 860       W/System.err©s at java.lang.reflect.Method.invokeNative(Native Method)
+08-11 860       W/System.err©s at java.lang.reflect.Method.invoke(Method.java:515)
+08-11 860       W/System.err©s at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+08-11 860       W/System.err©s at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+08-11 860       W/System.err©s at dalvik.system.NativeStart.main(Native Method)
+08-11 620       V/uAbstractProtocolQueue©s handleAgingTimerExpire packet
+08-11 620       V/uAbstractProtocolConnection©s onTimeout packet uProtocolPacket@type:0@operation:-64@error:0@data:null
+08-11 520       V/uAbstractProtocolConnection©s stopConnection -63,0
+08-11 520       V/uAbstractProtocolConnection©s sendApplicationData DISCONNECT,CTRL
+08-11 520       V/uAbstractProtocolQueue©s send packet uProtocolPacket@type:0@operation:-63@error:0@data:null
+08-11 520       V/uAbstractProtocolQueue©s send sequence 1
+08-11 520       V/uBleService©s disconnect B4:99:4C:4C:EE:EF
+08-11 520       V/uBleGatt©s Device disconnect.
+08-11 520       D/BluetoothGatt©s cancelOpen() - device: B4:99:4C:4C:EE:EF
+08-11 520       D/BluetoothGatt©s onClientConnectionState() - status=0 clientIf=5 device=B4:99:4C:4C:EE:EF
+08-11 520       V/uBleService©s Disconnected from GATT server.
+08-11 520       V/uBleService©s broadcastUpdate: B4:99:4C:4C:EE:EF
+08-11 530       V/uBleService©s Service Call Back on Action com.uteacher.www.uteacherble.ACTION_GATT_DISCONNECTED
+08-11 530       V/uBleDeviceAdapter©s onDisconnected B4:99:4C:4C:EE:EF,0
+08-11 540       V/uBleService©s close B4:99:4C:4C:EE:EF
+08-11 540       V/uBleGatt©s Device close.
+08-11 540       D/BluetoothGatt©s close()
+08-11 540       D/BluetoothGatt©s unregisterApp() - mClientIf=5
+08-11 620       V/uAbstractProtocolQueue©s sendHandler data 04 01 20 C1 00 22
+08-11 620       V/uAbstractDeviceAdapter©s send data: 04 01 20 C1 00 22
+08-11 630       V/uBleDeviceAdapter©s writeToDevice 0000ffe5-0000-1000-8000-00805f9b34fb,0000ffe9-0000-1000-8000-00805f9b34fb,04 01 20 C1 00 22
+08-11 630       V/uAbstractProtocolQueue©s handleAgingTimerExpire packet
