@@ -100,7 +100,7 @@ public class uProtocolSimpleQueue extends uAbstractProtocolQueue {
         mSequence += 1;
     }
 
-    private long sendThrottleTime = 100;
+    private long sendThrottleTime = 50;
 
     @Override
     public void setSendThrottleTime(long time) {

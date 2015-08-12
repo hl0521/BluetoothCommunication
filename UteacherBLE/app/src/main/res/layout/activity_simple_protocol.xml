@@ -42,6 +42,13 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/bluetooth_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="蓝牙状态:断开" />
+
+    <TextView
         android:id="@+id/device_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,18 +68,189 @@
             android:text="连接设备" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/connect_state"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="连接状态指示" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/game_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="游戏" />
+
+        <CheckBox
+            android:id="@+id/action_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="动作" />
+
+        <CheckBox
+            android:id="@+id/love_egg1_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="跳蛋1" />
+
+        <CheckBox
+            android:id="@+id/love_egg2_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="跳蛋2" />
+
+        <CheckBox
+            android:id="@+id/base_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="底座" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/function_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set" />
+
+        <TextView
+            android:id="@+id/function_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="设备功能设置结果:" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/love_egg1_mode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="M1"
+            android:numeric="integer" />
+
+        <EditText
+            android:id="@+id/love_egg1_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="T1"
+            android:numeric="integer" />
+
+        <EditText
+            android:id="@+id/love_egg2_mode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="M2"
+            android:numeric="integer" />
+
+        <EditText
+            android:id="@+id/love_egg2_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="T2"
+            android:numeric="integer" />
+
+        <Button
+            android:id="@+id/love_egg_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Set" />
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/id_screen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/love_egg_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="跳蛋设置结果:" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/base_mode_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="运行模式"
+            android:numeric="integer" />
+
+        <EditText
+            android:id="@+id/base_frequency_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="频率"
+            android:numeric="integer" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Set" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/base_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="底座设置结果:" />
+
+    <TextView
+        android:id="@+id/soc_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="SOC查询结果:" />
+
+    <TextView
+        android:id="@+id/state_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="设备状态查询结果:" />
+
+    <TextView
+        android:id="@+id/action_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="动作数据查询结果:" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/id_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其它调试信息" />
+    </ScrollView>
 
 </LinearLayout>
