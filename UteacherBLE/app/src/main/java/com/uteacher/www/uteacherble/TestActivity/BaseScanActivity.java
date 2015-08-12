@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -28,7 +29,7 @@ public abstract class BaseScanActivity extends uBluetoothAdapterActivity impleme
     private ArrayList<String> deviceList = new ArrayList<>();
 
     private ProgressBar pbScanning;
-    private TextView tvScanStatus;
+    private Button scanControl;
 
 
     protected void startScan() {
@@ -37,8 +38,8 @@ public abstract class BaseScanActivity extends uBluetoothAdapterActivity impleme
                 @Override
                 public void run() {
                     pbScanning.setVisibility(View.VISIBLE);
-                    tvScanStatus.setText("Scanning...");
-                    tvScanStatus.setEnabled(false);
+                    scanControl.setText("Scanning...");
+                    scanControl.setEnabled(false);
                 }
             });
         } else {
@@ -46,8 +47,8 @@ public abstract class BaseScanActivity extends uBluetoothAdapterActivity impleme
                 @Override
                 public void run() {
                     pbScanning.setVisibility(View.INVISIBLE);
-                    tvScanStatus.setText("Failed to start scan.");
-                    tvScanStatus.setEnabled(true);
+                    scanControl.setText("Scan Failed");
+                    scanControl.setEnabled(true);
                 }
             });
         }
@@ -93,8 +94,8 @@ public abstract class BaseScanActivity extends uBluetoothAdapterActivity impleme
 
 
         pbScanning = (ProgressBar) findViewById(R.id.id_scanning_progress);
-        tvScanStatus = (TextView) findViewById(R.id.id_scan_status);
-        tvScanStatus.setOnClickListener(new View.OnClickListener() {
+        scanControl = (Button) findViewById(R.id.id_scan_control);
+        scanControl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 runOnUiThread(new Runnable() {
@@ -127,8 +128,8 @@ public abstract class BaseScanActivity extends uBluetoothAdapterActivity impleme
             @Override
             public void run() {
                 pbScanning.setVisibility(View.INVISIBLE);
-                tvScanStatus.setText("Scan stopped.");
-                tvScanStatus.setEnabled(true);
+                scanControl.setText("Start Scan");
+                scanControl.setEnabled(true);
             }
         });
     }
