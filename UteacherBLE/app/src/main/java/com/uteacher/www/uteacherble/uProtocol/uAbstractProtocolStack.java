@@ -57,11 +57,9 @@ public abstract class uAbstractProtocolStack implements uProtocolStackInterface 
         }
     }
 
-    protected abstract byte parseControl(int version, int priority, int type) throws uPacketInvalidError;
-
     @Override
     public byte[] parsePacket(uAbstractProtocolPacket packet) throws uPacketLengthError, uPacketInvalidError {
-        int length = 4; // 1 byte seq + 1 byte control + 1 byte operation + 1 byte type.
+        int length = 4; // 1byte length + 1 byte control + 1 byte operation + 1 byte CRC.
         if (packet.getData() != null) {
             length += packet.getData().length;
         }
@@ -72,21 +70,13 @@ public abstract class uAbstractProtocolStack implements uProtocolStackInterface 
 
         byte[] data = new byte[length + 2];
         data[0] = (byte) length;
-        data[1] = packet.getSequence();
-        data[2] = parseControl(packet.getVersion(), packet.getPriority(), packet.getPacketType());
-        data[3] = packet.getOperation();
-        if (packet.getPacketType() == REQUEST) {
-            data[4] = packet.getType();
-        } else if (packet.getPacketType() == RESPONSE) {
-            data[4] = packet.getError();
-        } else {
-            throw new uPacketInvalidError();
-        }
+        data[1] = packet.getControl();
+        data[2] = packet.getOperation();
 
-        for (int i = 5; i < data.length - 1; i++) {
-            data[i] = packet.getData()[i - 5];
+        for (int i = 3; i < data.length - 1; i++) {
+            data[i] = packet.getData()[i - 3];
         }
-        data[data.length - 1] = CRC(data, 0, data.length-1);
+        data[data.length - 1] = CRC(data, 0, data.length - 1);
 
         return data;
     }
@@ -99,12 +89,6 @@ public abstract class uAbstractProtocolStack implements uProtocolStackInterface 
 
     protected abstract byte CRC(byte[] data, int begin, int end);
 
-    protected abstract int parseVersion(byte control) throws uPacketInvalidError;
-
-    protected abstract int parsePriority(byte control) throws uPacketInvalidError;
-
-    protected abstract int parsePacketType(byte control) throws uPacketInvalidError;
-
     @Override
     public uAbstractProtocolPacket parseByte(byte[] data) throws uPacketLengthError, uPacketCRCFailure, uPacketInvalidError {
 
@@ -112,7 +96,7 @@ public abstract class uAbstractProtocolStack implements uProtocolStackInterface 
             throw new uPacketLengthError();
         }
 
-        if (data[0] != data.length - 2) { //data[0] is 1 byte length, exclude 1st byte and crc
+        if (data[0] != data.length) { // data[0] is 1 byte length
             throw new uPacketLengthError();
         }
 
@@ -121,31 +105,17 @@ public abstract class uAbstractProtocolStack implements uProtocolStackInterface 
         }
 
         uAbstractProtocolPacket packet = newPacket();
-        packet.setSequence(data[1]);
-        packet.setVersion(parseVersion(data[2]));
-        packet.setPriority(parsePriority(data[2]));
-        packet.setPacketType(parsePacketType(data[2]));
-
-        packet.setOperation(data[3]);
-        if (packet.getPacketType() == REQUEST) {
-            packet.setType(data[4]);
-        } else if (packet.getPacketType() == RESPONSE) {
-            packet.setError(data[4]);
-        } else {
-            throw new uPacketInvalidError();
-        }
-
-        packet.setData(Arrays.copyOfRange(data, 5, data.length - 1));
+        packet.setControl(data[1]);
+        packet.setOperation(data[2]);
+        packet.setData(Arrays.copyOfRange(data, 3, data.length - 1));
 
         return packet;
     }
 
 
-
     public abstract String parseDeviceInfo(byte[] data) throws uPacketInvalidError;
 
     public abstract long parseKeepAlive(byte[] data) throws uPacketInvalidError;
-
 
 
 }

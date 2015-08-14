@@ -19,7 +19,7 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
 
 
     private static HashMap<OPERATION, Byte> mOperationCode = new HashMap<>();
-    private static HashMap<TYPE, Byte> mTypeCode = new HashMap<>();
+    private static HashMap<CONTROL, Byte> mControlCode = new HashMap<>();
     private static HashMap<ERROR, Byte> mErrorCode = new HashMap<>();
 
     static {
@@ -27,26 +27,23 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
         mOperationCode.put(OPERATION.CONNECT, (byte) 0xc0);
         mOperationCode.put(OPERATION.DISCONNECT, (byte) 0xc1);
         mOperationCode.put(OPERATION.KEEPALIVE, (byte) 0xc2);
-        mOperationCode.put(OPERATION.DEVICE_INFO, (byte) 0xe2);
-        mOperationCode.put(OPERATION.ERROR_STATISTIC, (byte) 0xe3);
-        mOperationCode.put(OPERATION.BATTERY, (byte) 0xe4);
-        mOperationCode.put(OPERATION.PARAMETER, (byte) 0xd0);
+        mOperationCode.put(OPERATION.DEVICE_INFO, (byte) 0xe0);
+        mOperationCode.put(OPERATION.DEVICE_ENABLE, (byte) 0xa0);
+        mOperationCode.put(OPERATION.LOVE_EGG_SETTING, (byte) 0xa1);
+        mOperationCode.put(OPERATION.BASE_SETTING, (byte) 0xa2);
+        mOperationCode.put(OPERATION.SOC_INQUIRE, (byte) 0xd0);
+        mOperationCode.put(OPERATION.STATE_INQUIRE, (byte) 0xd1);
+        mOperationCode.put(OPERATION.ACTION_INQUIRE, (byte) 0xd2);
 
-        mTypeCode.put(TYPE.CTRL, (byte) 0x0);
-        mTypeCode.put(TYPE.GET, (byte) 0x1);
-        mTypeCode.put(TYPE.SET, (byte) 0x2);
+        mControlCode.put(CONTROL.DOWN, (byte) 0x40);
+        mControlCode.put(CONTROL.UP, (byte) 0x50);
 
-        mErrorCode.put(ERROR.ERROR_OK, (byte) 0x0);
-        mErrorCode.put(ERROR.ERROR_DISCONNECT, (byte) 0x01);
-        mErrorCode.put(ERROR.ERROR_INVALID_OPERATION, (byte) 0x02);
-        mErrorCode.put(ERROR.ERROR_INVALID_TYPE, (byte) 0x03);
-        mErrorCode.put(ERROR.ERROR_INVALID_PARAM, (byte) 0x04);
-        mErrorCode.put(ERROR.ERROR_DEVICE_PAUSED, (byte) 0x05);
-
+        mErrorCode.put(ERROR.ERROR_OK, (byte) 0x00);
+        mErrorCode.put(ERROR.ERROR_ERR, (byte) 0xFF);
     }
 
     private static HashMap<Byte, OPERATION> mOperationEnum = new HashMap<>();
-    private static HashMap<Byte, TYPE> mTypeEnum = new HashMap<>();
+    private static HashMap<Byte, CONTROL> mControlEnum = new HashMap<>();
     private static HashMap<Byte, ERROR> mErrorEnum = new HashMap<>();
 
     static {
@@ -54,8 +51,8 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
             mOperationEnum.put(mOperationCode.get(op), op);
         }
 
-        for (TYPE tp : mTypeCode.keySet()) {
-            mTypeEnum.put(mTypeCode.get(tp), tp);
+        for (CONTROL co : mControlCode.keySet()) {
+            mControlEnum.put(mControlCode.get(co), co);
         }
 
         for (ERROR err : mErrorCode.keySet()) {
@@ -63,10 +60,10 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
         }
     }
 
-    public final static int VERSION = 1;
+    public final static int VERSION = 10;  // software version: 1.0
 
-    private final static int DEVICE_INFO_LENGTH = 13;
-    private final static int MIN_PACKET_LENGTH = 6;
+    private final static int DEVICE_INFO_LENGTH = 10;
+    private final static int MIN_PACKET_LENGTH = 4;
     private final static int MAX_PACKET_LENGTH = 20;
 
 
@@ -95,13 +92,13 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
     }
 
     @Override
-    public byte getTypeCode(TYPE type) {
-        return mTypeCode.get(type);
+    public byte getControlCode(CONTROL control) {
+        return mControlCode.get(control);
     }
 
     @Override
-    public TYPE getType(byte type) {
-        return mTypeEnum.get(type);
+    public CONTROL getControl(byte control) {
+        return mControlEnum.get(control);
     }
 
     @Override
@@ -128,23 +125,6 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
     }
 
     @Override
-    protected byte parseControl(int version, int priority, int type) throws uPacketInvalidError {
-        if (version != getProtocolVersion()) {
-            throw new uPacketInvalidError();
-        }
-
-        if (priority != HIGH_PRIORITY && priority != LOW_PRIORITY) {
-            throw new uPacketInvalidError();
-        }
-
-        if (type != REQUEST && type != RESPONSE) {
-            throw new uPacketInvalidError();
-        }
-
-        return (byte) ((version << 5) | (priority << 4) | (type << 3));
-    }
-
-    @Override
     protected int getMinPacketLength() {
         return MIN_PACKET_LENGTH;
     }
@@ -165,24 +145,6 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
     }
 
     @Override
-    protected int parseVersion(byte control) throws uPacketInvalidError {
-        int version = (control >> 5) & 0x03;
-        return version;
-    }
-
-    @Override
-    protected int parsePriority(byte control) throws uPacketInvalidError {
-        int priority = (control >> 4) & 0x01;
-        return priority;
-    }
-
-    @Override
-    protected int parsePacketType(byte control) throws uPacketInvalidError {
-        int type = (control >> 3) & 0x01;
-        return type;
-    }
-
-    @Override
     public String parseDeviceInfo(byte[] data) throws uPacketInvalidError {
         if (data.length != DEVICE_INFO_LENGTH) {
             throw new uPacketInvalidError();
@@ -199,7 +161,6 @@ public class uProtocolStackV1 extends uAbstractProtocolStack {
 
         return (long) (data[0] * 1000);
     }
-
 
     @Override
     public uAbstractProtocolPacket newPacket() {

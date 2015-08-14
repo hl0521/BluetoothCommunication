@@ -225,8 +225,7 @@ public class uBleDeviceAdapter extends uAbstractDeviceAdapter implements uBleDev
         String character = uBleDeviceAttributeFactory.getCharacterUUID(uBleDeviceAttributeFactory.CHARACTER.DATA_WRITE_CHARACTER);
 
         Log.v(TAG, "writeToDevice " + service + "," + character + "," + StringUtil.byte2String(data));
-        return mService.write(
-                mDevice.getAddress(), service, character, data);
+        return mService.write(mDevice.getAddress(), service, character, data);
     }
 
 
@@ -344,7 +343,6 @@ public class uBleDeviceAdapter extends uAbstractDeviceAdapter implements uBleDev
                     mDeviceCallback.onGetUARTRate(address, rate, dStatus);
                 }
             });
-
         }
     }
 
@@ -412,7 +410,7 @@ public class uBleDeviceAdapter extends uAbstractDeviceAdapter implements uBleDev
 
         if (character.equals(uBleDeviceAttributeFactory.getCharacterUUID(
                 uBleDeviceAttributeFactory.CHARACTER.DATA_NOTIFY_CHARACTER))) {
-            receive(data); //receive will enqueue data to connection queue for later handling.
+            receive(data);         // receive will enqueue data to connection queue for later handling.
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {

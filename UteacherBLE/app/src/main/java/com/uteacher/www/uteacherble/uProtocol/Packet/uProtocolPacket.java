@@ -9,14 +9,10 @@ import com.uteacher.www.uteacherble.uProtocol.uAbstractProtocolStack;
 public class uProtocolPacket extends uAbstractProtocolPacket {
 
     private uAbstractProtocolStack mProtocol;
+    private byte mControl;
     private byte mOperation;
-    private byte mType;
     private byte[] mData;
-    private byte mError;
-    private byte mSequence;
-    private int mVersion;
     private int mPriority;
-    private int mPacketType;
 
     public uProtocolPacket(uAbstractProtocolStack protocol) {
         mProtocol = protocol;
@@ -33,16 +29,6 @@ public class uProtocolPacket extends uAbstractProtocolPacket {
     }
 
     @Override
-    public void setType(byte type) {
-        mType = type;
-    }
-
-    @Override
-    public byte getType() {
-        return mType;
-    }
-
-    @Override
     public void setData(byte[] data) {
         mData = data;
     }
@@ -50,36 +36,6 @@ public class uProtocolPacket extends uAbstractProtocolPacket {
     @Override
     public byte[] getData() {
         return mData;
-    }
-
-    @Override
-    public void setError(byte error) {
-        mError = error;
-    }
-
-    @Override
-    public byte getError() {
-        return mError;
-    }
-
-    @Override
-    public void setSequence(byte sequence) {
-        mSequence = sequence;
-    }
-
-    @Override
-    public byte getSequence() {
-        return mSequence;
-    }
-
-    @Override
-    public void setVersion(int version) {
-        mVersion = version;
-    }
-
-    @Override
-    public int getVersion() {
-        return mVersion;
     }
 
     @Override
@@ -93,17 +49,15 @@ public class uProtocolPacket extends uAbstractProtocolPacket {
     }
 
     @Override
-    public void setPacketType(int type) {
-        mPacketType = type;
-    }
-
-    @Override
-    public int getPacketType() {
-        return mPacketType;
-    }
-
-    @Override
     public uAbstractProtocolStack getProtocol() {
         return mProtocol;
+    }
+
+    public byte getControl() {
+        return mControl;
+    }
+
+    public void setControl(byte control) {
+        mControl = control;
     }
 }

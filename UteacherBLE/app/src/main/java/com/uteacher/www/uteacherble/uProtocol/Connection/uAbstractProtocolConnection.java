@@ -33,31 +33,27 @@ public abstract class uAbstractProtocolConnection implements uProtocolConnection
     protected abstract ProtocolCallback getProtocolCallback();
 
 
-    private boolean sendApplicationData(byte operation, byte type, byte[] data) {
+    private boolean sendApplicationData(byte operation, byte control, byte[] data) {
         uAbstractProtocolPacket packet = getProtocol().newPacket();
         packet.setOperation(operation);
-        packet.setType(type);
+        packet.setControl(control);
         packet.setData(data);
-        packet.setVersion(getProtocol().getProtocolVersion());
         packet.setPriority(getProtocol().HIGH_PRIORITY);
-        packet.setPacketType(getProtocol().REQUEST);
 
-        Log.v(TAG, "sendApplicationData " + getProtocol().getOperation(operation).toString()
-                + "," + getProtocol().getType(type).toString() + "," + new String(data));
+        Log.v(TAG, "sendApplicationData " + getProtocol().getControl(control).toString()
+                + "," + getProtocol().getOperation(operation).toString() + "," + new String(data));
         return getQueue().send(packet);
     }
 
 
-    private boolean sendApplicationData(byte operation, byte type) {
+    private boolean sendApplicationData(byte operation, byte control) {
         uAbstractProtocolPacket packet = getProtocol().newPacket();
         packet.setOperation(operation);
-        packet.setType(type);
-        packet.setVersion(getProtocol().getProtocolVersion());
+        packet.setControl(control);
         packet.setPriority(getProtocol().HIGH_PRIORITY);
-        packet.setPacketType(getProtocol().REQUEST);
 
-        Log.v(TAG, "sendApplicationData " + getProtocol().getOperation(operation).toString()
-                + "," + getProtocol().getType(type).toString());
+        Log.v(TAG, "sendApplicationData " + getProtocol().getControl(control).toString()
+                + "," + getProtocol().getOperation(operation).toString());
         return getQueue().send(packet);
     }
 
@@ -65,91 +61,103 @@ public abstract class uAbstractProtocolConnection implements uProtocolConnection
         return getProtocol().getOperationCode(operation);
     }
 
-    private byte getTypeCode(uProtocolStackInterface.TYPE type) {
-        return getProtocol().getTypeCode(type);
+    private byte getControlCode(uProtocolStackInterface.CONTROL control) {
+        return getProtocol().getControlCode(control);
     }
 
 
     @Override
+    public boolean getDeviceInformation() {
+        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.DEVICE_INFO);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
+
+        Log.v(TAG, "getDeviceInformation " + operation + "," + control);
+        return sendApplicationData(operation, control);
+    }
+
+    @Override
     public boolean startConnection() {
         byte operation = getOperationCode(uProtocolStackInterface.OPERATION.CONNECT);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.CTRL);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        Log.v(TAG, "startConnection " + operation + "," + type);
-        return sendApplicationData(operation, type);
+        Log.v(TAG, "startConnection " + control + "," + operation);
+        return sendApplicationData(operation, control);
     }
 
     @Override
     public boolean stopConnection() {
         byte operation = getOperationCode(uProtocolStackInterface.OPERATION.DISCONNECT);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.CTRL);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        Log.v(TAG, "stopConnection " + operation + "," + type);
-        return sendApplicationData(operation, type);
+        Log.v(TAG, "stopConnection " + operation + "," + control);
+        return sendApplicationData(operation, control);
     }
 
     @Override
-    public boolean sendKeepAlive(byte timer) {
+    public boolean sendKeepAlive() {
         byte operation = getOperationCode(uProtocolStackInterface.OPERATION.KEEPALIVE);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.CTRL);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        Log.v(TAG, "sendKeepAlive " + operation + "," + type + "," + timer);
-        return sendApplicationData(operation, type, new byte[]{timer});
+        Log.v(TAG, "sendKeepAlive " + operation + "," + control);
+        return sendApplicationData(operation, control);
     }
 
     @Override
-    public boolean getDeviceInformation() {
-        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.DEVICE_INFO);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.GET);
+    public boolean deviceEnable(byte[] data) {
+        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.DEVICE_ENABLE);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        Log.v(TAG, "getDeviceInformation " + operation + "," + type);
-        return sendApplicationData(operation, type);
+        Log.v(TAG, "setDeviceEnable " + operation + ", " + control + ", " + StringUtil.byte2String(data));
+        return sendApplicationData(operation, control, data);
     }
 
     @Override
-    public boolean getDeviceErrorStatistics(byte error) {
-        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.ERROR_STATISTIC);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.GET);
+    public boolean loveEggSetting(byte[] data) {
+        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.LOVE_EGG_SETTING);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        Log.v(TAG, "getDeviceErrorStatistics " + operation + "," + type + "," + error);
-        return sendApplicationData(operation, type, new byte[]{error});
+        Log.v(TAG, "setDeviceEnable " + operation + ", " + control + ", " + StringUtil.byte2String(data));
+        return sendApplicationData(operation, control, data);
     }
 
     @Override
-    public boolean getDeviceBattery() {
-        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.BATTERY);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.GET);
+    public boolean baseSetting(byte[] data) {
+        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.BASE_SETTING);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        Log.v(TAG, "getDeviceBattery " + operation + "," + type);
-        return sendApplicationData(operation, type);
+        Log.v(TAG, "setDeviceEnable " + operation + ", " + control + ", " + StringUtil.byte2String(data));
+        return sendApplicationData(operation, control, data);
     }
 
     @Override
-    public boolean getDeviceParameter(byte param) {
-        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.PARAMETER);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.GET);
+    public boolean getDeviceSoc() {
+        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.SOC_INQUIRE);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        Log.v(TAG, "getDeviceParameter " + operation + "," + type + "," + param);
-        return sendApplicationData(operation, type, new byte[]{param});
+        Log.v(TAG, "getDeviceSOC " + operation + "," + control);
+        return sendApplicationData(operation, control);
     }
 
     @Override
-    public boolean setDeviceParameter(byte param, byte[] data) {
-        byte[] aData = new byte[data.length + 1];
-        aData[0] = param;
-        for (int i = 1; i < data.length + 1; i++) {
-            aData[i] = data[i - 1];
-        }
+    public boolean getDeviceStatus() {
+        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.STATE_INQUIRE);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
 
-        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.PARAMETER);
-        byte type = getTypeCode(uProtocolStackInterface.TYPE.SET);
-
-        Log.v(TAG, "setDeviceParameter " + operation + "," + type + "," + StringUtil.byte2String(aData));
-        return sendApplicationData(operation, type, aData);
+        Log.v(TAG, "getDeviceErrorStatistics " + operation + "," + control);
+        return sendApplicationData(operation, control);
     }
 
-    private uProtocolStackInterface.TYPE getType(byte type) {
-        return getProtocol().getType(type);
+    @Override
+    public boolean getDeviceAction() {
+        byte operation = getOperationCode(uProtocolStackInterface.OPERATION.ACTION_INQUIRE);
+        byte control = getControlCode(uProtocolStackInterface.CONTROL.DOWN);
+
+        Log.v(TAG, "getDeviceParameter " + operation + "," + control);
+        return sendApplicationData(operation, control);
+    }
+
+    private uProtocolStackInterface.CONTROL getControl(byte control) {
+        return getProtocol().getControl(control);
     }
 
     private uProtocolStackInterface.OPERATION getOperation(byte operation) {
@@ -161,7 +169,7 @@ public abstract class uAbstractProtocolConnection implements uProtocolConnection
     }
 
     public void onReceive(uAbstractProtocolPacket packet, uAbstractProtocolPacket unackPacket) {
-        dogKicker.kickDog(true); //Any valid packet received.
+        dogKicker.kickDog(true); // Any valid packet received.
 
         receiveAndDisPatch(packet, unackPacket);
     }
@@ -169,98 +177,60 @@ public abstract class uAbstractProtocolConnection implements uProtocolConnection
 
     public void receiveAndDisPatch(uAbstractProtocolPacket packet, uAbstractProtocolPacket unackPacket) {
         uProtocolStackInterface.OPERATION operation = getOperation(packet.getOperation());
-        uProtocolStackInterface.TYPE type = getType(unackPacket.getType());
-        uProtocolStackInterface.ERROR error = getError(packet.getError());
+        uProtocolStackInterface.CONTROL control = getControl(packet.getControl());
 
-        Log.v(TAG, "receiveAndDisPatch packet " + packet.toString());
         Log.v(TAG, "receiveAndDisPatch unackPacket " + unackPacket.toString());
+        Log.v(TAG, "receiveAndDisPatch packet " + packet.toString());
 
-        if (error != uProtocolStackInterface.ERROR.ERROR_OK) {
-            onErrorReceived(packet, unackPacket, error);
+        if (control != uProtocolStackInterface.CONTROL.UP) {
+            onErrorReceived(packet, unackPacket, control);
             return;
         }
 
         if (operation == uProtocolStackInterface.OPERATION.CONNECT) {
-            getProtocolCallback().onConnected(this);
+            getProtocolCallback().onConnected(this, packet.getData());
         } else if (operation == uProtocolStackInterface.OPERATION.DISCONNECT) {
-            getProtocolCallback().onDisConnected(this);
+            getProtocolCallback().onDisConnected(this, packet.getData());
         } else if (operation == uProtocolStackInterface.OPERATION.KEEPALIVE) {
             onKeepAliveRecevied(packet);
         } else if (operation == uProtocolStackInterface.OPERATION.DEVICE_INFO) {
-            if (type == uProtocolStackInterface.TYPE.GET) {
-                try {
-                    getProtocolCallback().onGetDeviceInfo(this, getProtocol().parseDeviceInfo(packet.getData()));
-                } catch (uPacketInvalidError invalidError) {
-                    invalidError.printStackTrace();
-                }
+            try {
+                getProtocolCallback().onGetDeviceInformation(this, getProtocol().parseDeviceInfo(packet.getData()));
+            } catch (uPacketInvalidError invalidError) {
+                invalidError.printStackTrace();
             }
-
-        } else if (operation == uProtocolStackInterface.OPERATION.ERROR_STATISTIC) {
-            if (type == uProtocolStackInterface.TYPE.GET) {
-                // FIXME: it's protocol's decision how to parse error statistics from packet data.
-                getProtocolCallback().onGetDeviceErrorStatistics(this, packet.getData()[0], packet.getData()[1]);
-            }
-
-        } else if (operation == uProtocolStackInterface.OPERATION.BATTERY) {
-            if (type == uProtocolStackInterface.TYPE.GET) {
-                // FIXME
-                getProtocolCallback().onGetDeviceBattery(this, packet.getData()[0]);
-            }
-
-        } else if (operation == uProtocolStackInterface.OPERATION.PARAMETER) {
-            if (type == uProtocolStackInterface.TYPE.SET) {
-                //FIXME
-                getProtocolCallback().onSetDeviceParam(this, unackPacket.getData()[0],
-                        Arrays.copyOfRange(unackPacket.getData(), 1, unackPacket.getData().length));
-            } else if (type == uProtocolStackInterface.TYPE.GET) {
-                //FIXME
-                getProtocolCallback().onGetDeviceParam(this, packet.getData()[0],
-                        Arrays.copyOfRange(packet.getData(), 1, packet.getData().length));
-
-            }
-
+        } else if (operation == uProtocolStackInterface.OPERATION.DEVICE_ENABLE) {
+            getProtocolCallback().onDeviceEnable(this, packet.getData());
+        } else if (operation == uProtocolStackInterface.OPERATION.LOVE_EGG_SETTING) {
+            getProtocolCallback().onLoveEggSetting(this, packet.getData());
+        } else if (operation == uProtocolStackInterface.OPERATION.BASE_SETTING) {
+            getProtocolCallback().onBaseSetting(this, packet.getData());
+        } else if (operation == uProtocolStackInterface.OPERATION.SOC_INQUIRE) {
+            getProtocolCallback().onGetDeviceSoc(this, packet.getData());
+        } else if (operation == uProtocolStackInterface.OPERATION.STATE_INQUIRE) {
+            getProtocolCallback().onGetDeviceStatus(this, packet.getData());
+        } else if (operation == uProtocolStackInterface.OPERATION.ACTION_INQUIRE) {
+            getProtocolCallback().onGetDeviceAction(this, packet.getData());
+        } else {
+            Log.d(TAG, "Unexpected operation: " + packet.getOperation());
         }
-
     }
 
     protected abstract void onPreferKeepAliveTimer(long prefer);
 
     private void onKeepAliveRecevied(uAbstractProtocolPacket packet) {
-        try {
-            long prefer = getProtocol().parseKeepAlive(packet.getData());
-            if (prefer != getKeepAliveTimer()) {
-                onPreferKeepAliveTimer(prefer);
-            }
 
-            Log.v(TAG, "onKeepAliveRecevied " + prefer);
-            getProtocolCallback().onGetKeepAliveAck(this, prefer);
-        } catch (uPacketInvalidError invalidError) {
-            invalidError.printStackTrace();
-        }
     }
 
 
-    private void onErrorReceived(uAbstractProtocolPacket packet, uAbstractProtocolPacket unackPacket, uProtocolStackInterface.ERROR error) {
+    private void onErrorReceived(uAbstractProtocolPacket packet, uAbstractProtocolPacket unackPacket, uProtocolStackInterface.CONTROL control) {
 
-        Log.v(TAG, "onErrorReceived " + error.toString());
-
-        if (error == uProtocolStackInterface.ERROR.ERROR_DISCONNECT) {
-            getProtocolCallback().onDisConnected(this); //Device indicates disconnected.
-        } else if (error == uProtocolStackInterface.ERROR.ERROR_DEVICE_PAUSED) {
-            getProtocolCallback().onPaused(this);
-        } else if (error == uProtocolStackInterface.ERROR.ERROR_INVALID_OPERATION) {
-
-        } else if (error == uProtocolStackInterface.ERROR.ERROR_INVALID_TYPE) {
-
-        } else if (error == uProtocolStackInterface.ERROR.ERROR_INVALID_PARAM) {
-
-        }
-
+        Log.v(TAG, "onErrorReceived " + control.toString());
     }
 
     public void onTimeout(uAbstractProtocolPacket packet) {
         uProtocolStackInterface.OPERATION operation = getOperation(packet.getOperation());
-        uProtocolStackInterface.TYPE type = getType(packet.getType());
+        uProtocolStackInterface.CONTROL control = getControl(packet.getControl());
 
         Log.v(TAG, "onTimeout packet " + packet.toString());
 
@@ -326,7 +296,7 @@ public abstract class uAbstractProtocolConnection implements uProtocolConnection
             getProtocolCallback().onKeepAliveTimeout(this);
         }
 
-        sendKeepAlive((byte) (getKeepAliveTimer() / 1000)); // million seconds/1000
+        sendKeepAlive(); // million seconds/1000
     }
 
 

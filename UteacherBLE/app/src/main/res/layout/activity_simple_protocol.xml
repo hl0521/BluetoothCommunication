@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="连接状态指示" />
+            android:text="设备状态：已断开" />
     </LinearLayout>
 
     <LinearLayout
@@ -206,6 +206,7 @@
             android:numeric="integer" />
 
         <Button
+            android:id="@+id/base_setting"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -214,9 +215,10 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/base_setting"
+        android:id="@+id/base_setting_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:gravity="left"
         android:text="底座设置结果:" />
 
@@ -224,6 +226,7 @@
         android:id="@+id/soc_inquire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:gravity="left"
         android:text="SOC查询结果:" />
 
@@ -231,6 +234,7 @@
         android:id="@+id/state_inquire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:gravity="left"
         android:text="设备状态查询结果:" />
 
@@ -244,13 +248,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="8dp">
 
         <TextView
             android:id="@+id/id_screen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="其它调试信息" />
+            android:text="其它调试信息\n" />
     </ScrollView>
 
 </LinearLayout>

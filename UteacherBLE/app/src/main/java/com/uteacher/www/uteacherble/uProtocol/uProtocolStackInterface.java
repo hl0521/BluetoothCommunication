@@ -13,10 +13,9 @@ import com.uteacher.www.uteacherble.uProtocol.Packet.uAbstractProtocolPacket;
  */
 public interface uProtocolStackInterface {
 
-    enum TYPE {
-        CTRL,
-        SET,
-        GET,
+    enum CONTROL {
+        DOWN,
+        UP,
     }
 
     enum OPERATION {
@@ -24,18 +23,17 @@ public interface uProtocolStackInterface {
         DISCONNECT,
         KEEPALIVE,
         DEVICE_INFO,
-        ERROR_STATISTIC,
-        BATTERY,
-        PARAMETER,
+        DEVICE_ENABLE,
+        LOVE_EGG_SETTING,
+        BASE_SETTING,
+        SOC_INQUIRE,
+        STATE_INQUIRE,
+        ACTION_INQUIRE,
     }
 
     enum ERROR {
         ERROR_OK,
-        ERROR_DISCONNECT,
-        ERROR_INVALID_OPERATION,
-        ERROR_INVALID_TYPE,
-        ERROR_INVALID_PARAM,
-        ERROR_DEVICE_PAUSED,
+        ERROR_ERR,
     }
 
     int REQUEST = 0;
@@ -52,9 +50,9 @@ public interface uProtocolStackInterface {
 
     OPERATION getOperation(byte operation);
 
-    byte getTypeCode(TYPE type);
+    byte getControlCode(CONTROL type);
 
-    TYPE getType(byte type);
+    CONTROL getControl(byte type);
 
     byte getErrorCode(ERROR error);
 
@@ -71,6 +69,4 @@ public interface uProtocolStackInterface {
     byte[] parsePacket(uAbstractProtocolPacket packet) throws uPacketLengthError, uPacketInvalidError;
 
     uAbstractProtocolPacket parseByte(byte[] data) throws uPacketLengthError, uPacketCRCFailure, uPacketInvalidError;
-
-
 }

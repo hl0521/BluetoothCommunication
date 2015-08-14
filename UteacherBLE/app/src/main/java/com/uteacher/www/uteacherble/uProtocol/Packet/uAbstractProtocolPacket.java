@@ -18,8 +18,7 @@ public abstract class uAbstractProtocolPacket implements uProtocolPacketInterfac
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "@type:" + getType()
-                + "@operation:" + getOperation() + "@error:" + getError()
-                + "@data:" + getData();
+        return getClass().getSimpleName() + " @control: " + getControl()
+                + " @operation: " + getOperation() + " @data: " + getData();
     }
 }

@@ -1,48 +1,54 @@
 package com.uteacher.www.uteacherble.uProtocol.Connection;
 
-import com.uteacher.www.uteacherble.uDeviceAdapter.uAbstractDeviceAdapter;
-
 /**
  * Created by cartman on 15/5/27.
  */
 public interface uProtocolConnectionInterface {
 
-    public interface ProtocolCallback {
-        public void onConnected(uAbstractProtocolConnection connection);
+    interface ProtocolCallback {
 
-        public void onDisConnected(uAbstractProtocolConnection connection);
+        void onGetDeviceInformation(uAbstractProtocolConnection connection, String info);
 
-        public void onKeepAliveTimeout(uAbstractProtocolConnection connection);
+        void onConnected(uAbstractProtocolConnection connection, byte[] ack);
 
-        public void onGetKeepAliveAck(uAbstractProtocolConnection connection, long peer);
+        void onDisConnected(uAbstractProtocolConnection connection, byte[] ack);
 
-        public void onPaused(uAbstractProtocolConnection connection);
+        void onDeviceEnable(uAbstractProtocolConnection connection, byte[] ack);
 
-        public void onGetDeviceInfo(uAbstractProtocolConnection connection, String info);
+        void onLoveEggSetting(uAbstractProtocolConnection connection, byte[] ack);
 
-        public void onGetDeviceErrorStatistics(uAbstractProtocolConnection connection, byte error, byte stats);
+        void onBaseSetting(uAbstractProtocolConnection connection, byte[] ack);
 
-        public void onGetDeviceBattery(uAbstractProtocolConnection connection, byte battery);
+        void onGetDeviceSoc(uAbstractProtocolConnection connection, byte[] data);
 
-        public void onSetDeviceParam(uAbstractProtocolConnection connection, byte param, byte[] data);
+        void onGetDeviceStatus(uAbstractProtocolConnection connection, byte[] data);
 
-        public void onGetDeviceParam(uAbstractProtocolConnection connection, byte param, byte[] data);
+        void onGetDeviceAction(uAbstractProtocolConnection connection, byte[] data);
+
+        void onKeepAliveTimeout(uAbstractProtocolConnection connection);
+
+        void onGetKeepAliveAck(uAbstractProtocolConnection connection, long peer);
+
+        void onPaused(uAbstractProtocolConnection connection);
     }
 
-    public boolean startConnection();
+    boolean getDeviceInformation();
 
-    public boolean stopConnection();
+    boolean startConnection();
 
-    public boolean sendKeepAlive(byte timer);
+    boolean stopConnection();
 
-    public boolean getDeviceInformation();
+    boolean sendKeepAlive();
 
-    public boolean getDeviceErrorStatistics(byte error);
+    boolean deviceEnable(byte[] data);
 
-    public boolean getDeviceBattery();
+    boolean loveEggSetting(byte[] data);
 
-    public boolean getDeviceParameter(byte param);
+    boolean baseSetting(byte[] data);
 
-    public boolean setDeviceParameter(byte param, byte[] data);
+    boolean getDeviceSoc();
 
+    boolean getDeviceStatus();
+
+    boolean getDeviceAction();
 }

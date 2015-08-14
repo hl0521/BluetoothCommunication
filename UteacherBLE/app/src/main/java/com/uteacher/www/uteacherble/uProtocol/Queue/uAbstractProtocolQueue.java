@@ -50,15 +50,13 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
 
         Log.v(TAG, "send packet " + packet.toString());
 
-        if (!getProtocol().isVersionSupported(packet.getVersion()) ||
-                packet.getPacketType() != uProtocolStackInterface.REQUEST) {
-            Log.d(TAG, "Invalid packet version " + packet.getVersion() + ",type " + packet.getPacketType());
+        if (packet.getControl() != getProtocol().getControlCode(uProtocolStackInterface.CONTROL.DOWN)) {
+            Log.d(TAG, "Invalid packet control byte " + packet.getControl());
             incrementFailure(FAILURE.INVALID_PACKET);
             return false;
         }
 
         Log.v(TAG, "send sequence " + getCurrentSequence(packet.getPriority()));
-        packet.setSequence(getCurrentSequence(packet.getPriority()));
         incrementSequence(packet.getPriority());
 
         if (getUnackQueue(packet.getPriority()).offer(packet)) {
@@ -102,30 +100,28 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
 
                     Log.v(TAG, "receiveHandler packet " + packet.toString());
 
-                    if (!getProtocol().isVersionSupported(packet.getVersion()) ||
-                            packet.getPacketType() != uProtocolStackInterface.RESPONSE) {
-                        Log.d(TAG, "invalid packet version " + packet.getVersion() + ",type " + packet.getPacketType());
+                    if (packet.getControl() != getProtocol().getControlCode(uProtocolStackInterface.CONTROL.UP)) {
+                        Log.d(TAG, "invalid pack control byte " + packet.getControl());
                         incrementFailure(FAILURE.INVALID_PACKET);
                         return;
                     }
 
                     uAbstractProtocolPacket unackPacket = getUnackQueue(packet.getPriority()).peek();
-                    if (unackPacket == null || compareSequence(packet.getSequence(), unackPacket.getSequence()) < 0) {
-                        Log.d(TAG, "unexpected sequence " + packet.getSequence() + "," + unackPacket.getSequence());
+                    if (unackPacket == null) {
+                        Log.d(TAG, "unexpected sequence");
                         incrementFailure(FAILURE.UNEXPECTED_SEQUENCE);
                         return;
                     }
 
                     uAbstractProtocolConnection conn = getConnection();
                     unackPacket = getUnackQueue(packet.getPriority()).poll();
-                    while (unackPacket != null && compareSequence(packet.getSequence(), unackPacket.getSequence()) > 0) {
-                        Log.v(TAG, "Sequence packet " + packet.getSequence() + ",unack " + unackPacket.getSequence());
+                    while ((unackPacket != null) && (unackPacket.getOperation() != packet.getOperation())) {
                         conn.onUnack(unackPacket);
                         unackPacket = getUnackQueue(packet.getPriority()).poll();
                     }
 
-                    if (unackPacket == null || compareSequence(packet.getSequence(), unackPacket.getSequence()) != 0) {
-                        Log.d(TAG, "unexpected sequence " + packet.getSequence() + "," + unackPacket.getSequence());
+                    if (unackPacket == null) {
+                        Log.d(TAG, "unexpected sequence " + packet.toString());
                         incrementFailure(FAILURE.UNEXPECTED_SEQUENCE);
                         return;
                     }
