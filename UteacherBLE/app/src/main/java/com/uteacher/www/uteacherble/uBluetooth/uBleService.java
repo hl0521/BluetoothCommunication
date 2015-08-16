@@ -70,7 +70,7 @@ public class uBleService extends Service implements uBleServiceInterface {
             mService = ((uBleService.LocalBinder) service).getService();
 
             // Automatically connects to the device upon successful start-up initialization.
-            tryConnectAll();
+//            tryConnectAll();
             Log.v(TAG, "Service connected ");
         }
 
