@@ -1,10 +1,8 @@
 package com.uteacher.www.uteacherble.TestActivity;
 
 import android.bluetooth.BluetoothDevice;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.uteacher.www.uteacherble.R;
-import com.uteacher.www.uteacherble.TestUtil.StringUtil;
 import com.uteacher.www.uteacherble.uDeviceAdapter.uBleDeviceAdapter;
 import com.uteacher.www.uteacherble.uDeviceAdapter.uBleDeviceAttributeFactory;
 import com.uteacher.www.uteacherble.uDeviceAdapter.uBleDeviceInterface;
@@ -75,6 +72,9 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
     private TimerTask task3;
     private TimerTask task4;
 
+    private Timer bluetoothTimer;
+    private TimerTask bluetoothTimerTask;
+
     private uAbstractProtocolStack mProtocolStack;
     private uAbstractProtocolConnection mConnection;
 
@@ -128,6 +128,23 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
+                    if (bluetoothTimer == null) {
+                        bluetoothTimer = new Timer(true);
+                    }
+
+                    if (bluetoothTimerTask == null) {
+                        bluetoothTimerTask = new TimerTask() {
+                            @Override
+                            public void run() {
+                                if (mConnection != null) {
+                                    mConnection.getQueue().sendData();
+                                }
+                            }
+                        };
+
+                        bluetoothTimer.schedule(bluetoothTimerTask,10,50);
+                    }
+
                     if (mConnection != null) {
                         tvScreen.append("连接设备：连接中...\n");
                         if (!mConnection.startConnection()) {
@@ -322,6 +339,22 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
             mAdapter = newDeviceAdapter(device);
             Toast.makeText(SimpleProtocolActivity.this, "Start device " + device.getAddress(),
                     Toast.LENGTH_SHORT).show();
+
+            if (bluetoothTimer == null) {
+                bluetoothTimer = new Timer(true);
+            }
+
+            if (bluetoothTimerTask == null) {
+                bluetoothTimerTask = new TimerTask() {
+                    @Override
+                    public void run() {
+                        if (mConnection != null) {
+                            mConnection.getQueue().sendData();
+                        }
+                    }
+                };
+            }
+
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -504,6 +537,11 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     }
                 }
             }, 100);
+
+            // Start the bluetooth Timer
+            if ((bluetoothTimer != null) && (bluetoothTimerTask != null)) {
+                bluetoothTimer.schedule(bluetoothTimerTask, 120, 50);
+            }
         }
     }
 
@@ -581,10 +619,10 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                             mTimer = new Timer(true);
                         }
 
-//                        mTimer.schedule(task1, 100, 1000);
-//                        mTimer.schedule(task2, 130, 10000);
-//                        mTimer.schedule(task3, 160, 1000);
-//                        mTimer.schedule(task4, 190, 100);
+                        mTimer.schedule(task1, 100, 1000);
+                        mTimer.schedule(task2, 130, 10000);
+                        mTimer.schedule(task3, 160, 1000);
+                        mTimer.schedule(task4, 190, 100);
                         tvScreen.append("定时任务已启动\n");
                     } else {
                         tvScreen.append("连接设备：失败\n");
@@ -624,6 +662,15 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                             mTimer.cancel();
                             mTimer = null;
                             tvScreen.append("定时任务已取消\n");
+                        }
+
+                        if (bluetoothTimer != null) {
+                            if (bluetoothTimerTask != null) {
+                                bluetoothTimerTask.cancel();
+                                bluetoothTimerTask = null;
+                            }
+                            bluetoothTimer.cancel();
+                            bluetoothTimer = null;
                         }
                     } else {
                         tvScreen.append("断开设备：失败\n");

@@ -17,6 +17,7 @@ import java.util.Iterator;
 import java.util.Queue;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Created by cartman on 15/5/27.
@@ -36,6 +37,8 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
     protected abstract Handler getReceiveHandler(int priority);
 
     protected abstract Queue<uAbstractProtocolPacket> getUnackQueue(int priority);
+
+    protected abstract Queue<uAbstractProtocolPacket> getForSendQueue();
 
     protected abstract int getCurrentSequence(int priority);
 
@@ -59,14 +62,29 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
         Log.v(TAG, "send sequence " + getCurrentSequence(packet.getPriority()));
         incrementSequence(packet.getPriority());
 
-        if (getUnackQueue(packet.getPriority()).offer(packet)) {
-            return getSendHandler(packet.getPriority()).postDelayed(new Runnable() {
+        if (getForSendQueue().offer(packet)) {
+            Log.d(TAG, "data into sequence: @control " + packet.getControl() + " / @operation " + packet.getOperation());
+            return true;
+        } else {
+            Log.d(TAG, "queue failure");
+            incrementFailure(FAILURE.QUEUE_FAILURE);
+            return false;
+        }
+    }
+
+    @Override
+    public void sendData() {
+        if (getForSendQueue().peek() != null) {
+            final uAbstractProtocolPacket packet = getForSendQueue().poll();
+            getSendHandler(packet.getPriority()).post(new Runnable() {
                 @Override
                 public void run() {
                     try {
                         byte[] data = getProtocol().parsePacket(packet);
                         Log.v(TAG, "sendHandler data " + StringUtil.byte2String(data));
-                        getDeviceAdapter().send(data);
+                        if (getDeviceAdapter().send(data)) {
+                            getUnackQueue(1).offer(packet);
+                        }
                     } catch (uPacketLengthError lengthError) {
                         lengthError.printStackTrace();
                         incrementFailure(FAILURE.INVALID_LENGTH);
@@ -75,13 +93,8 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
                         incrementFailure(FAILURE.INVALID_PACKET);
                     }
                 }
-            }, getSendThrottleTime());
-        } else {
-            Log.d(TAG, "queue failure");
-            incrementFailure(FAILURE.QUEUE_FAILURE);
+            });
         }
-
-        return false;
     }
 
     protected abstract int compareSequence(byte seq1, byte seq2);
@@ -116,21 +129,30 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
 
                     uAbstractProtocolConnection conn = getConnection();
                     unackPacket = getUnackQueue(packet.getPriority()).poll();
+                    Queue<uAbstractProtocolPacket> tempQueue = new LinkedBlockingQueue<>();
                     while ((unackPacket != null) && (unackPacket.getOperation() != packet.getOperation())) {
-                        conn.onUnack(unackPacket);
+//                        conn.onUnack(unackPacket);
+                        tempQueue.offer(unackPacket);
                         unackPacket = getUnackQueue(packet.getPriority()).poll();
                     }
 
                     if (unackPacket == null) {
                         Log.d(TAG, "unexpected sequence " + packet.toString());
                         incrementFailure(FAILURE.UNEXPECTED_SEQUENCE);
+
+                        while (tempQueue.peek() != null) {
+                            getUnackQueue(1).offer(tempQueue.poll());
+                        }
                         return;
+                    }
+
+                    while (tempQueue.peek() != null) {
+                        getForSendQueue().offer(tempQueue.poll());
                     }
 
                     conn.onReceive(packet, unackPacket);
                 }
             });
-
         } catch (uPacketLengthError lengthError) {
             lengthError.printStackTrace();
             incrementFailure(FAILURE.INVALID_LENGTH);

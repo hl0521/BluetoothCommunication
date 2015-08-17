@@ -15,9 +15,11 @@ public interface uProtocolQueueInterface {
         QUEUE_FAILURE,
     }
 
-    public boolean send(uAbstractProtocolPacket packet);
+    boolean send(uAbstractProtocolPacket packet);
 
-    public boolean receive(byte[] data);
+    void sendData();
 
-    public int getFailureStatistic(FAILURE failure);
+    boolean receive(byte[] data);
+
+    int getFailureStatistic(FAILURE failure);
 }

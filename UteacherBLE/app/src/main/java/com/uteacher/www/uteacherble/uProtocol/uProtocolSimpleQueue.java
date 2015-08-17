@@ -34,6 +34,7 @@ public class uProtocolSimpleQueue extends uAbstractProtocolQueue {
     private Handler mReceiveHandler;
 
     private Queue<uAbstractProtocolPacket> mUnackQueue;
+    private Queue<uAbstractProtocolPacket> mForSendQueue;
 
     private Timer mAgingTimer;
     private final String agingTimerName = uProtocolSimpleQueue.class.getName() + ".agingTimer";
@@ -66,6 +67,7 @@ public class uProtocolSimpleQueue extends uAbstractProtocolQueue {
         mReceiveHandler = new Handler(mReceiveThread.getLooper());
 
         mUnackQueue = new LinkedBlockingQueue<>();
+        mForSendQueue = new LinkedBlockingQueue<>();
 
         clearFailureStatistic();
 
@@ -89,6 +91,10 @@ public class uProtocolSimpleQueue extends uAbstractProtocolQueue {
         return mUnackQueue;
     }
 
+    @Override
+    protected Queue getForSendQueue() {
+        return mForSendQueue;
+    }
 
     @Override
     synchronized protected int getCurrentSequence(int priority) {
