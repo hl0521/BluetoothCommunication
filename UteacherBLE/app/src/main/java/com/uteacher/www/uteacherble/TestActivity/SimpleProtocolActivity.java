@@ -1,8 +1,10 @@
 package com.uteacher.www.uteacherble.TestActivity;
 
 import android.bluetooth.BluetoothDevice;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,6 +33,8 @@ import java.util.TimerTask;
 
 
 public class SimpleProtocolActivity extends BaseScanActivity implements uProtocolConnectionInterface.ProtocolCallback {
+
+    private static final String TAG = uAbstractProtocolConnection.class.getSimpleName();
 
     private Handler mHandler;
     private TextView tvScreen;
@@ -66,6 +70,10 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
     private TextView actionInquire;
 
     private Timer mTimer;
+    private TimerTask task1;
+    private TimerTask task2;
+    private TimerTask task3;
+    private TimerTask task4;
 
     private uAbstractProtocolStack mProtocolStack;
     private uAbstractProtocolConnection mConnection;
@@ -121,21 +129,21 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     if (mConnection != null) {
-                        tvScreen.append("Connecting protocol\n");
+                        tvScreen.append("连接设备：连接中...\n");
                         if (!mConnection.startConnection()) {
-                            tvScreen.append("Failed to connect protocol\n");
+                            tvScreen.append("连接设备：数据发送失败\n");
                         }
                     } else {
-                        connectState.setText("设备状态：设备未连接");
+                        connectState.setText("设备状态：未初始化");
                     }
                 } else {
                     if (mConnection != null) {
-                        tvScreen.append("Stop connecting protocal\n");
+                        tvScreen.append("断开设备：断开中...\n");
                         if (!mConnection.stopConnection()) {
-                            tvScreen.append("Stop connecting failed");
+                            tvScreen.append("断开设备：数据发送失败\n");
                         }
                     } else {
-                        connectState.setText("设备状态：设备未连接");
+                        connectState.setText("设备状态：未初始化");
                     }
                 }
             }
@@ -151,16 +159,18 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                         ((loveEgg2Enable.isChecked() ? 1 : 0) << 4) +
                         (baseEnable.isChecked() ? 1 : 0));
 
+                String str = Integer.toBinaryString(number[0] + 256);
+
                 if (mConnection != null) {
-                    tvScreen.append("Device enable setting...\n");
+                    tvScreen.append("设备模块使能设置中...\n");
                     if (!mConnection.deviceEnable(number)) {
-                        enableResult.setText("设备功能设置结果：设置失败");
-                        tvScreen.append("Device enable setting failed\n");
+                        enableResult.setText("设备使能设置结果：数据发送失败");
+                        tvScreen.append("设备模块使能设置：数据发送失败\n");
                     } else {
-                        enableResult.setText("设备功能设置结果：" + Integer.toBinaryString(number[0]));
+                        enableResult.setText("设备使能设置结果：" + str.substring(str.length() - 8, str.length()));
                     }
                 } else {
-                    enableResult.setText("设备功能设置结果：设备未连接");
+                    enableResult.setText("设备使能设置结果：未初始化");
                 }
             }
         });
@@ -201,15 +211,16 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     number[1] = (byte) (loveEggM2 * 16 + loveEggT2);
 
                     if (mConnection != null) {
-                        tvScreen.append("Love egg setting...\n");
+                        tvScreen.append("跳蛋设置中...\n");
                         if (!mConnection.loveEggSetting(number)) {
-                            tvScreen.append("Failed to set love egg\n");
-                            loveEggResult.setText("跳蛋设置结果：设置失败");
+                            tvScreen.append("跳蛋设置：数据发送失败\n");
+                            loveEggResult.setText("跳蛋设置结果：数据发送失败");
                         } else {
-                            loveEggResult.setText("跳蛋设置结果：" + number.toString());
+                            loveEggResult.setText("跳蛋设置结果：" + loveEggM1 + "  " + loveEggT1
+                                    + "  " + loveEggM2 + "  " + loveEggT2);
                         }
                     } else {
-                        loveEggResult.setText("跳蛋设置结果：设备未连接");
+                        loveEggResult.setText("跳蛋设置结果：未初始化");
                     }
                 } catch (Exception e) {
                     loveEggResult.setText("跳蛋设置结果：请输入完整参数");
@@ -243,15 +254,15 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     number[3] = 0;
 
                     if (mConnection != null) {
+                        tvScreen.append("底座设置中...\n");
                         if (!mConnection.baseSetting(number)) {
-                            tvScreen.append("Base setting...\n");
-                            tvScreen.append("Base setting failed\n");
-                            baseSettingResult.setText("底座设置结果：失败");
+                            tvScreen.append("底座设置：数据发送失败\n");
+                            baseSettingResult.setText("底座设置结果：数据发送失败");
                         } else {
                             baseSettingResult.setText("底座设置结果：模式-" + baseMode + " / 频率-" + baseFrequency);
                         }
                     } else {
-                        baseSettingResult.setText("底座设置结果：设备未连接");
+                        baseSettingResult.setText("底座设置结果：未初始化");
                     }
 
                 } catch (Exception e) {
@@ -342,22 +353,22 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     }
                 }
             }
-        }, 500);
+        }, 1000);
 
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                if (mConnection != null) {
-                    mConnection.stopConnection();
-                }
-
-                if (mAdapter != null) {
-                    mAdapter.disconnect();
-                    mAdapter = null;
-                    tvScreen.append("Device disconnected\n");
-                }
-            }
-        }, 100000);
+//        mHandler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                if (mConnection != null) {
+//                    mConnection.stopConnection();
+//                }
+//
+//                if (mAdapter != null) {
+//                    mAdapter.disconnect();
+//                    mAdapter = null;
+//                    tvScreen.append("Device disconnected\n");
+//                }
+//            }
+//        }, 200000);
 
     }
 
@@ -388,9 +399,14 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
             bluetoothStatus.setText("蓝牙状态：连接");
 
             tvScreen.append("Getting device name\n");
-            if (!mAdapter.getDeviceName()) {
-                tvScreen.append("Failed to get device name\n");
-            }
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if (!mAdapter.getDeviceName()) {
+                        tvScreen.append("Failed to get device name\n");
+                    }
+                }
+            }, 200);
         }
     }
 
@@ -481,8 +497,9 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                         mConnection = mProtocolStack.newConnection(mAdapter, SimpleProtocolActivity.this);
                         tvScreen.append("初始化已完成，可进行正常操作\n");
 
+                        tvScreen.append("获取设备信息中...\n");
                         if (!mConnection.getDeviceInformation()) {
-                            tvScreen.append("Failed to get device information\n");
+                            tvScreen.append("获取设备信息：数据发送失败\n");
                         }
                     }
                 }
@@ -491,145 +508,264 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
     }
 
     @Override
-    public void onGetDeviceInformation(uAbstractProtocolConnection connection, String info) {
-        if (mConnection != null) {
-            deviceInformation.setText("设备信息：" + info.substring(0, 0) + "-" + info.substring(2, 6)
-                    + "-" + info.substring(8, 8));
-            //FIXME, do something if device information doesn't match
-            //...
-        }
+    public void onGetDeviceInformation(uAbstractProtocolConnection connection, final String info) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    deviceInformation.setText("设备信息： " + info.substring(0, 2) + " - " + info.substring(2, 8)
+                            + " - " + info.substring(8, 10));
+                    tvScreen.append("设备信息获取成功\n");
+                    //FIXME, do something if device information doesn't match
+                    //...
+                }
+            }
+        });
     }
 
     @Override
-    public void onConnected(uAbstractProtocolConnection connection, byte[] ack) {
-        if (mConnection != null) {
-            if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
-                connectState.setText("设备状态：已连接");
-                tvScreen.append("Connecting protocal successfully\n");
+    public void onConnected(uAbstractProtocolConnection connection, final byte[] ack) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
+                        connectState.setText("设备状态：已连接");
+                        tvScreen.append("连接设备：成功\n");
 
-                TimerTask task1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        mConnection.sendKeepAlive();
+                        if (task1 == null) {
+                            task1 = new TimerTask() {
+                                @Override
+                                public void run() {
+                                    if (mConnection != null) {
+                                        mConnection.sendKeepAlive();
+                                    }
+                                }
+                            };
+                        }
+
+                        if (task2 == null) {
+                            task2 = new TimerTask() {
+                                @Override
+                                public void run() {
+                                    if (mConnection != null) {
+                                        mConnection.getDeviceSoc();
+                                    }
+                                }
+                            };
+                        }
+
+                        if (task3 == null) {
+                            task3 = new TimerTask() {
+                                @Override
+                                public void run() {
+                                    if (mConnection != null) {
+                                        mConnection.getDeviceStatus();
+                                    }
+                                }
+                            };
+                        }
+
+                        if (task4 == null) {
+                            task4 = new TimerTask() {
+                                @Override
+                                public void run() {
+                                    if (mConnection != null) {
+                                        mConnection.getDeviceAction();
+                                    }
+                                }
+                            };
+                        }
+
+                        if (mTimer == null) {
+                            mTimer = new Timer(true);
+                        }
+
+//                        mTimer.schedule(task1, 100, 1000);
+//                        mTimer.schedule(task2, 130, 10000);
+//                        mTimer.schedule(task3, 160, 1000);
+//                        mTimer.schedule(task4, 190, 100);
+                        tvScreen.append("定时任务已启动\n");
+                    } else {
+                        tvScreen.append("连接设备：失败\n");
                     }
-                };
+                }
+            }
+        });
+    }
 
-                TimerTask task2 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        mConnection.getDeviceSoc();
+    @Override
+    public void onDisConnected(uAbstractProtocolConnection connection, final byte[] ack) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
+                        connectState.setText("设备状态：已断开");
+                        tvScreen.append("断开设备：成功\n");
+
+                        if (mTimer != null) {
+                            if (task1 != null) {
+                                task1.cancel();
+                                task1 = null;
+                            }
+                            if (task2 != null) {
+                                task2.cancel();
+                                task2 = null;
+                            }
+                            if (task3 != null) {
+                                task3.cancel();
+                                task3 = null;
+                            }
+                            if (task4 != null) {
+                                task4.cancel();
+                                task4 = null;
+                            }
+                            mTimer.cancel();
+                            mTimer = null;
+                            tvScreen.append("定时任务已取消\n");
+                        }
+                    } else {
+                        tvScreen.append("断开设备：失败\n");
                     }
-                };
+                }
+            }
+        });
+    }
 
-                TimerTask task3 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        mConnection.getDeviceStatus();
+    @Override
+    public void onDeviceEnable(uAbstractProtocolConnection connection, final byte[] ack) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
+                        enableResult.append("   成功");
+                        tvScreen.append("设备模块使能设置成功\n");
+                    } else {
+                        enableResult.append("   失败");
+                        tvScreen.append("设备模块使能设置失败\n");
                     }
-                };
+                }
+            }
+        });
+    }
 
-                TimerTask task4 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        mConnection.getDeviceAction();
+    @Override
+    public void onLoveEggSetting(uAbstractProtocolConnection connection, final byte[] ack) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
+                        loveEggResult.append("    成功");
+                        tvScreen.append("跳蛋设置成功\n");
+                    } else {
+                        loveEggResult.append("   失败");
+                        tvScreen.append("跳蛋设置失败\n");
                     }
-                };
-
-                mTimer = new Timer(true);
-
-                mTimer.schedule(task1, 100, 1000);
-                mTimer.schedule(task2, 120, 30000);
-                mTimer.schedule(task3, 140, 100);
-                mTimer.schedule(task4, 160, 2000);
-            } else {
-                tvScreen.append("Failed to connect protocal\n");
+                }
             }
-        }
+        });
     }
 
     @Override
-    public void onDisConnected(uAbstractProtocolConnection connection, byte[] ack) {
-        if (mConnection != null) {
-            if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
-                connectState.setText("设备状态：已断开");
-
-                mTimer.cancel();
-                tvScreen.append("Protocol disconnected\n");
-            } else {
-                tvScreen.append("Failed to disconnect protocal\n");
+    public void onBaseSetting(uAbstractProtocolConnection connection, final byte[] ack) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
+                        baseSettingResult.append("    成功");
+                        tvScreen.append("底座设置成功\n");
+                    } else {
+                        baseSettingResult.append("    失败");
+                        tvScreen.append("底座设置失败\n");
+                    }
+                }
             }
-        }
+        });
     }
 
     @Override
-    public void onDeviceEnable(uAbstractProtocolConnection connection, byte[] ack) {
-        if (mConnection != null) {
-            if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
-                enableResult.append("   成功");
-                tvScreen.append("Enable device successfully\n");
-            } else {
-                enableResult.append("   失败");
-                tvScreen.append("Enable device failed\n");
+    public void onGetDeviceSoc(uAbstractProtocolConnection connection, final byte[] data) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    int temp1 = (data[0] & 0x0FF) + 1000;
+                    int temp2 = (data[1] & 0x0FF) + 1000;
+                    int temp3 = (data[2] & 0x0FF) + 1000;
+                    int temp4 = (data[3] & 0x0FF) + 1000;
+                    int temp5 = (data[4] & 0x0FF) + 1000;
+                    int temp6 = (data[5] & 0x0FF) + 1000;
+                    String str1 = Integer.toString(temp1);
+                    String str2 = Integer.toString(temp2);
+                    String str3 = Integer.toString(temp3);
+                    String str4 = Integer.toString(temp4);
+                    String str5 = Integer.toString(temp5);
+                    String str6 = Integer.toString(temp6);
+                    socInquire.setText("电池的电量" + str1.substring(str1.length() - 3, str1.length())
+                            + "    接收数据包" + str2.substring(str2.length() - 3, str2.length())
+                            + "    长度错误包" + str3.substring(str3.length() - 3, str3.length())
+                            + "\n校验错误包" + str4.substring(str4.length() - 3, str4.length())
+                            + "    控制错误包" + str5.substring(str5.length() - 3, str5.length())
+                            + "    操作错误包" + str6.substring(str6.length() - 3, str6.length()));
+                }
             }
-        }
+        });
     }
 
     @Override
-    public void onLoveEggSetting(uAbstractProtocolConnection connection, byte[] ack) {
-        if (mConnection != null) {
-            if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
-                loveEggResult.append("    成功");
-                tvScreen.append("Love egg setting successfully\n");
-            } else {
-                loveEggResult.append("   失败");
-                tvScreen.append("Love egg setting failed");
+    public void onGetDeviceStatus(uAbstractProtocolConnection connection, final byte[] data) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    int temp1 = (data[0] & 0x0FF) + 256;
+                    int temp2 = (data[1] & 0x0FF) + 256;
+                    String str1 = Integer.toBinaryString(temp1);
+                    String str2 = Integer.toBinaryString(temp2);
+                    stateInquire.setText("设备状态" + str1.substring(str1.length() - 8, str1.length())
+                            + "    底座状态" + str2.substring(str2.length() - 8, str2.length()));
+                }
             }
-        }
+        });
     }
 
     @Override
-    public void onBaseSetting(uAbstractProtocolConnection connection, byte[] ack) {
-        if (mConnection != null) {
-            if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
-                baseSettingResult.append("    成功");
-                tvScreen.append("Base setting successfully\n");
-            } else {
-                baseSettingResult.append("    失败");
-                tvScreen.append("Base setting failed\n");
+    public void onGetDeviceAction(uAbstractProtocolConnection connection, final byte[] data) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    int temp1 = (data[0] & 0x0FF) * 256 + (data[1] & 0x0FF) + 100000;
+                    int temp2 = (data[4] & 0x0FF) * 256 + (data[5] & 0x0FF) + 100000;
+                    int temp3 = (data[6] & 0x0FF) * 256 + (data[7] & 0x0FF) + 100000;
+                    String str1 = Integer.toString(temp1);
+                    String str2 = Integer.toString(temp2);
+                    String str3 = Integer.toString(temp3);
+
+                    actionInquire.setText("累计时间" + str1.substring(str1.length() - 5, str1.length())
+                            + "    瞬时位置" + (data[2] >> 4) + "    瞬时方向" + (data[2] & 0x0F) + "\n"
+                            + "总次数" + str2.substring(str2.length() - 5, str2.length())
+                            + "   总长度" + str3.substring(str3.length() - 5, str3.length())
+                            + "    瞬时深度" + data[3]);
+                }
             }
-        }
-    }
-
-    @Override
-    public void onGetDeviceSoc(uAbstractProtocolConnection connection, byte[] data) {
-        if (mConnection != null) {
-            socInquire.setText("电池的电量" + data[0] + "    接收数据包" + data[1] + "    长度错误包\n" + data[2]
-                    + "校验错误包" + data[3] + "    控制错误包" + data[4] + "    操作错误包" + data[5]);
-        }
-    }
-
-    @Override
-    public void onGetDeviceStatus(uAbstractProtocolConnection connection, byte[] data) {
-        if (mConnection != null) {
-            stateInquire.setText("设备状态" + Integer.toBinaryString(data[0])
-                    + "    底座状态" + Integer.toBinaryString(data[1]));
-        }
-    }
-
-    @Override
-    public void onGetDeviceAction(uAbstractProtocolConnection connection, byte[] data) {
-        if (mConnection != null) {
-            actionInquire.setText("累计时间" + (data[0] * 256 + data[1]) + "    瞬时位置" + (data[2] >> 4)
-                    + "    瞬时方向" + (data[2] & 0x0F) + "\n" + "总次数" + (data[4] * 256 + data[5])
-                    + "    总长度" + (data[6] * 256 + data[7]) + "    瞬时深度" + data[3]);
-        }
+        });
     }
 
     @Override
     public void onKeepAliveTimeout(uAbstractProtocolConnection connection) {
-        if (mConnection != null) {
-            tvScreen.append("Keep alive timeout\n");
-        }
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mConnection != null) {
+                    tvScreen.append("Keep alive timeout\n");
+                }
+            }
+        });
     }
 
     @Override

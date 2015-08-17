@@ -30,7 +30,7 @@ public abstract class BaseScanActivity extends uBluetoothAdapterActivity impleme
 
 
     protected void startScan() {
-        if (getScanner().startScan(20000, Pattern.compile("Tv221u-.*"), null, BaseScanActivity.this)) {
+        if (getScanner().startScan(10000, Pattern.compile("Tv221u-.*"), null, BaseScanActivity.this)) {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {

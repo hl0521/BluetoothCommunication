@@ -37,7 +37,7 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
 
     protected abstract Queue<uAbstractProtocolPacket> getUnackQueue(int priority);
 
-    protected abstract byte getCurrentSequence(int priority);
+    protected abstract int getCurrentSequence(int priority);
 
     protected abstract void incrementSequence(int priority);
 
@@ -80,6 +80,7 @@ public abstract class uAbstractProtocolQueue implements uProtocolQueueInterface 
             Log.d(TAG, "queue failure");
             incrementFailure(FAILURE.QUEUE_FAILURE);
         }
+
         return false;
     }
 

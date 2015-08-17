@@ -38,7 +38,7 @@ public class uProtocolSimpleQueue extends uAbstractProtocolQueue {
     private Timer mAgingTimer;
     private final String agingTimerName = uProtocolSimpleQueue.class.getName() + ".agingTimer";
 
-    private byte mSequence;
+    private int mSequence;
 
     private HashMap<FAILURE, Integer> mFailureMap = new HashMap<>();
     private static HashMap<FAILURE, Integer> mFailueThreshold = new HashMap<>();
@@ -69,8 +69,8 @@ public class uProtocolSimpleQueue extends uAbstractProtocolQueue {
 
         clearFailureStatistic();
 
-        mAgingTimer = new Timer(agingTimerName);
-        startAgingTimer(mAgingTimer, uProtocolStackInterface.HIGH_PRIORITY);
+//        mAgingTimer = new Timer(agingTimerName);
+//        startAgingTimer(mAgingTimer, uProtocolStackInterface.HIGH_PRIORITY);
     }
 
 
@@ -91,7 +91,7 @@ public class uProtocolSimpleQueue extends uAbstractProtocolQueue {
 
 
     @Override
-    synchronized protected byte getCurrentSequence(int priority) {
+    synchronized protected int getCurrentSequence(int priority) {
         return mSequence;
     }
 

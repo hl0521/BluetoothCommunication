@@ -68,7 +68,7 @@ public abstract class uAbstractProtocolStack implements uProtocolStackInterface 
             throw new uPacketLengthError();
         }
 
-        byte[] data = new byte[length + 2];
+        byte[] data = new byte[length];
         data[0] = (byte) length;
         data[1] = packet.getControl();
         data[2] = packet.getOperation();
