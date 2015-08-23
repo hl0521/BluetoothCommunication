@@ -810,6 +810,18 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     String str3 = Integer.toString(temp3);
                     String str4 = Integer.toBinaryString(temp4);
 
+                    // "instantPosition 是 瞬时位置"
+                    int instantPosition = 0;
+                    byte temp5 = data[2];
+                    for (int i=6;i>0;i--) {
+                        int b = (temp5 >> i) & 0x1;
+                        if (b != 0) {
+                            instantPosition = instantPosition + 1;
+                        } else {
+                            break;
+                        }
+                    }
+
                     actionInquire.setText("累计时间" + str1.substring(str1.length() - 5, str1.length())
                             + "    瞬时位置" + str4.substring(str4.length() - 6, str4.length()) + "\n"
                             + "总次数" + str2.substring(str2.length() - 5, str2.length())
@@ -817,30 +829,7 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                             + "    瞬时深度" + data[3]);
 
                     if (chartDialog != null) {
-                        int position = 0;
-                        switch (data[2]){
-                            case 63:
-                                position = 6;
-                                break;
-                            case 31:
-                                position = 5;
-                                break;
-                            case 15:
-                                position = 4;
-                                break;
-                            case 7:
-                                position = 3;
-                                break;
-                            case 3:
-                                position = 2;
-                                break;
-                            case 1:
-                                position = 1;
-                                break;
-                            default:
-                                break;
-                        }
-                        chartDialog.updateData(position, (int)data[3]);
+                        chartDialog.updateData(instantPosition, (int)data[3]);
                     }
                 }
             }
