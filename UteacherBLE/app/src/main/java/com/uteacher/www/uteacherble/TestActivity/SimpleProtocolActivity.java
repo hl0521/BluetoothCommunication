@@ -795,6 +795,14 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     String str3 = Integer.toString(temp3);
                     String str4 = Integer.toBinaryString(temp4);
 
+                    // "instantPosition 是 瞬时位置"
+                    int instantPosition = 0;
+                    byte temp5 = data[2];
+                    while (temp5 != 0) {
+                        instantPosition = instantPosition + 1;
+                        temp5 = (byte) (temp5 >> 1);
+                    }
+
                     actionInquire.setText("累计时间" + str1.substring(str1.length() - 5, str1.length())
                             + "    瞬时位置" + str4.substring(str4.length() - 6, str4.length()) + "\n"
                             + "总次数" + str2.substring(str2.length() - 5, str2.length())
