@@ -35,10 +35,10 @@ public class ChartDialog extends DialogFragment {
     private LineChartView lineChartView;
 
     private final String[] mLabelsBarChart= {"","","","","","","","","",""};
-    private final float[] mValuesBarChart = {0,1,2,0,1,2,0,1,2,0};
+    private final float[] mValuesBarChart = {0,10,0,10,0,10,0,10,0,10};
 
     private final String[] mLabelsStackChart= {""};
-    private final float[][] mValuesStackChart = {{10},{-80f}};
+    private final float[][] mValuesStackChart = {{0},{-60f}};
 
 
     private final String[] mLabelsLineChart= {"","","","","","","","","",""};
@@ -144,12 +144,12 @@ public class ChartDialog extends DialogFragment {
     }
 
     private void initContentView(View view) {
-        barChartView = (BarChartView) view.findViewById(R.id.barchart);
+//        barChartView = (BarChartView) view.findViewById(R.id.barchart);
         horizontalStackBarChartView = (HorizontalStackBarChartView) view.findViewById(R.id.stackedchart);
         lineChartView = (LineChartView) view.findViewById(R.id.linechart);
 
 
-        initBarChart(barChartView);
+//        initBarChart(barChartView);
         initStackChart(horizontalStackBarChartView);
         initLineChart(lineChartView);
     }
@@ -187,20 +187,24 @@ public class ChartDialog extends DialogFragment {
         return super.onCreateDialog(savedInstanceState);
     }
 
+    private int prePosition = 0;
     private int preDepth = 0;
 
     public void updateData(final int position, final int depth) {
-        updateLineChart(lineChartView, position);
         if (preDepth != depth) {
-            updateStackChart(horizontalStackBarChartView, depth-preDepth);
-            updateBarChart(barChartView, depth);
+            updateLineChart(lineChartView, depth);
             preDepth = depth;
+        }
+        if (prePosition != position) {
+            updateStackChart(horizontalStackBarChartView, position - prePosition);
+//            updateBarChart(barChartView, depth);
+            prePosition = position;
         }
     }
 
     public void updateStackChart(ChartView chart, float delta) {
-        mValuesStackChart[0][0] = mValuesStackChart[0][0] + delta;
-        mValuesStackChart[1][0] = mValuesStackChart[1][0] - delta;
+        mValuesStackChart[0][0] = mValuesStackChart[0][0] + delta*10;
+        mValuesStackChart[1][0] = mValuesStackChart[1][0] + delta*10;
 
         chart.updateValues(0, mValuesStackChart[0]);
         chart.updateValues(1, mValuesStackChart[1]);

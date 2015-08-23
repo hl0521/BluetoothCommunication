@@ -136,7 +136,7 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
 
         stateInquire.setText("设备状态xxxx-xxxx    底座状态xxxx-0000");
 
-        actionInquire.setText("累计时间xxxxx    瞬时位置x    瞬时方向x\n" +
+        actionInquire.setText("累计时间xxxxx    瞬时位置xxxxxx\n" +
                 "总次数xxxxx    总长度xxxxx    瞬时深度x");
 
         connectControl.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -157,7 +157,7 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                             }
                         };
 
-                        bluetoothTimer.schedule(bluetoothTimerTask,10,50);
+                        bluetoothTimer.schedule(bluetoothTimerTask, 10, 50);
                     }
 
                     if (mConnection != null) {
@@ -804,18 +804,43 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     int temp1 = (data[0] & 0x0FF) * 256 + (data[1] & 0x0FF) + 100000;
                     int temp2 = (data[4] & 0x0FF) * 256 + (data[5] & 0x0FF) + 100000;
                     int temp3 = (data[6] & 0x0FF) * 256 + (data[7] & 0x0FF) + 100000;
+                    int temp4 = (data[2] & 0x0FF) + 256;
                     String str1 = Integer.toString(temp1);
                     String str2 = Integer.toString(temp2);
                     String str3 = Integer.toString(temp3);
+                    String str4 = Integer.toBinaryString(temp4);
 
                     actionInquire.setText("累计时间" + str1.substring(str1.length() - 5, str1.length())
-                            + "    瞬时位置" + (data[2] >> 4) + "    瞬时方向" + (data[2] & 0x0F) + "\n"
+                            + "    瞬时位置" + str4.substring(str4.length() - 6, str4.length()) + "\n"
                             + "总次数" + str2.substring(str2.length() - 5, str2.length())
                             + "   总长度" + str3.substring(str3.length() - 5, str3.length())
                             + "    瞬时深度" + data[3]);
 
                     if (chartDialog != null) {
-                        chartDialog.updateData((int)(data[2] >> 4), (int)data[3]);
+                        int position = 0;
+                        switch (data[2]){
+                            case 63:
+                                position = 6;
+                                break;
+                            case 31:
+                                position = 5;
+                                break;
+                            case 15:
+                                position = 4;
+                                break;
+                            case 7:
+                                position = 3;
+                                break;
+                            case 3:
+                                position = 2;
+                                break;
+                            case 1:
+                                position = 1;
+                                break;
+                            default:
+                                break;
+                        }
+                        chartDialog.updateData(position, (int)data[3]);
                     }
                 }
             }
