@@ -66,6 +66,8 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
     private TextView stateInquire;
     private TextView actionInquire;
 
+    private Button btnActionView;
+
     private Timer mTimer;
     private TimerTask task1;
     private TimerTask task2;
@@ -77,6 +79,8 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
 
     private uAbstractProtocolStack mProtocolStack;
     private uAbstractProtocolConnection mConnection;
+
+    private ChartDialog chartDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,6 +118,17 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
         socInquire = (TextView) findViewById(R.id.soc_inquire);
         stateInquire = (TextView) findViewById(R.id.state_inquire);
         actionInquire = (TextView) findViewById(R.id.action_inquire);
+
+        btnActionView = (Button) findViewById(R.id.action_view);
+        btnActionView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (chartDialog == null) {
+                    chartDialog = ChartDialog.newInstance("","");
+                }
+                chartDialog.show(getFragmentManager(), "");
+            }
+        });
 
         // Initial output
         socInquire.setText("电池的电量xxx    接收数据包xxx    长度错误包xxx\n" +
@@ -798,6 +813,10 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                             + "总次数" + str2.substring(str2.length() - 5, str2.length())
                             + "   总长度" + str3.substring(str3.length() - 5, str3.length())
                             + "    瞬时深度" + data[3]);
+
+                    if (chartDialog != null) {
+                        chartDialog.updateData((int)(data[2] >> 4), (int)data[3]);
+                    }
                 }
             }
         });
