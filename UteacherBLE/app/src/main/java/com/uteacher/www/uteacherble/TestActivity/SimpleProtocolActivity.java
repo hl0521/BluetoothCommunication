@@ -813,8 +813,8 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     // "instantPosition 是 瞬时位置"
                     int instantPosition = 0;
                     byte temp5 = data[2];
-                    for (int i=6;i>0;i--) {
-                        int b = (temp5 >> i) & 0x1;
+                    for (int i=0;i<6;i++) {
+                        int b = temp5 & (1<<i);
                         if (b != 0) {
                             instantPosition = instantPosition + 1;
                         } else {
