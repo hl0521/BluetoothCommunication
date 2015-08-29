@@ -82,6 +82,8 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
 
     private ChartDialog chartDialog;
 
+    private Boolean protocalConnectionFlag;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,12 +121,14 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
         stateInquire = (TextView) findViewById(R.id.state_inquire);
         actionInquire = (TextView) findViewById(R.id.action_inquire);
 
+        protocalConnectionFlag = false;
+
         btnActionView = (Button) findViewById(R.id.action_view);
         btnActionView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (chartDialog == null) {
-                    chartDialog = ChartDialog.newInstance("","");
+                    chartDialog = ChartDialog.newInstance("", "");
                 }
                 chartDialog.show(getFragmentManager(), "");
             }
@@ -136,38 +140,41 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
 
         stateInquire.setText("设备状态xxxx-xxxx    底座状态xxxx-0000");
 
-        actionInquire.setText("累计时间xxxxx    瞬时位置xxxxxx\n" +
+        actionInquire.setText("累计时间xxxxx    瞬时位置x x x x x\n" +
                 "总次数xxxxx    总长度xxxxx    瞬时深度x");
 
         connectControl.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    if (bluetoothTimer == null) {
-                        bluetoothTimer = new Timer(true);
-                    }
+                    createBluetoothTimer();
 
-                    if (bluetoothTimerTask == null) {
-                        bluetoothTimerTask = new TimerTask() {
-                            @Override
-                            public void run() {
-                                if (mConnection != null) {
-                                    mConnection.getQueue().sendData();
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (mConnection != null) {
+                                tvScreen.append("获取设备信息中...\n");
+                                if (!mConnection.getDeviceInformation()) {
+                                    tvScreen.append("获取设备信息：数据发送失败\n");
                                 }
                             }
-                        };
-
-                        bluetoothTimer.schedule(bluetoothTimerTask, 10, 50);
-                    }
-
-                    if (mConnection != null) {
-                        tvScreen.append("连接设备：连接中...\n");
-                        if (!mConnection.startConnection()) {
-                            tvScreen.append("连接设备：数据发送失败\n");
                         }
-                    } else {
-                        connectState.setText("设备状态：未初始化");
-                    }
+                    }, 50);
+
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (mConnection != null) {
+                                tvScreen.append("连接设备：连接中...\n");
+                                if (!mConnection.startConnection()) {
+                                    tvScreen.append("连接设备：数据发送失败\n");
+                                    cancelBluetoothTimer();
+                                }
+                            } else {
+                                connectState.setText("设备状态：未初始化");
+                            }
+                        }
+                    }, 100);
                 } else {
                     if (mConnection != null) {
                         tvScreen.append("断开设备：断开中...\n");
@@ -194,12 +201,16 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                 String str = Integer.toBinaryString(number[0] + 256);
 
                 if (mConnection != null) {
-                    tvScreen.append("设备模块使能设置中...\n");
-                    if (!mConnection.deviceEnable(number)) {
-                        enableResult.setText("设备使能设置结果：数据发送失败");
-                        tvScreen.append("设备模块使能设置：数据发送失败\n");
+                    if (protocalConnectionFlag == true) {
+                        tvScreen.append("设备模块使能设置中...\n");
+                        if (!mConnection.deviceEnable(number)) {
+                            enableResult.setText("设备使能设置结果：数据发送失败");
+                            tvScreen.append("设备模块使能设置：数据发送失败\n");
+                        } else {
+                            enableResult.setText("设备使能设置结果：" + str.substring(str.length() - 8, str.length()));
+                        }
                     } else {
-                        enableResult.setText("设备使能设置结果：" + str.substring(str.length() - 8, str.length()));
+                        enableResult.setText("设备使能设置结果：设备未连接");
                     }
                 } else {
                     enableResult.setText("设备使能设置结果：未初始化");
@@ -243,14 +254,19 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     number[1] = (byte) (loveEggM2 * 16 + loveEggT2);
 
                     if (mConnection != null) {
-                        tvScreen.append("跳蛋设置中...\n");
-                        if (!mConnection.loveEggSetting(number)) {
-                            tvScreen.append("跳蛋设置：数据发送失败\n");
-                            loveEggResult.setText("跳蛋设置结果：数据发送失败");
+                        if (protocalConnectionFlag == true) {
+                            tvScreen.append("跳蛋设置中...\n");
+                            if (!mConnection.loveEggSetting(number)) {
+                                tvScreen.append("跳蛋设置：数据发送失败\n");
+                                loveEggResult.setText("跳蛋设置结果：数据发送失败");
+                            } else {
+                                loveEggResult.setText("跳蛋设置结果：" + loveEggM1 + "  " + loveEggT1
+                                        + "  " + loveEggM2 + "  " + loveEggT2);
+                            }
                         } else {
-                            loveEggResult.setText("跳蛋设置结果：" + loveEggM1 + "  " + loveEggT1
-                                    + "  " + loveEggM2 + "  " + loveEggT2);
+                            loveEggResult.setText("跳蛋设置结果：设备未连接");
                         }
+
                     } else {
                         loveEggResult.setText("跳蛋设置结果：未初始化");
                     }
@@ -286,12 +302,16 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     number[3] = 0;
 
                     if (mConnection != null) {
-                        tvScreen.append("底座设置中...\n");
-                        if (!mConnection.baseSetting(number)) {
-                            tvScreen.append("底座设置：数据发送失败\n");
-                            baseSettingResult.setText("底座设置结果：数据发送失败");
+                        if (protocalConnectionFlag == true) {
+                            tvScreen.append("底座设置中...\n");
+                            if (!mConnection.baseSetting(number)) {
+                                tvScreen.append("底座设置：数据发送失败\n");
+                                baseSettingResult.setText("底座设置结果：数据发送失败");
+                            } else {
+                                baseSettingResult.setText("底座设置结果：模式-" + baseMode + " / 频率-" + baseFrequency);
+                            }
                         } else {
-                            baseSettingResult.setText("底座设置结果：模式-" + baseMode + " / 频率-" + baseFrequency);
+                            baseSettingResult.setText("底座设置结果：设备未连接");
                         }
                     } else {
                         baseSettingResult.setText("底座设置结果：未初始化");
@@ -347,28 +367,13 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
 
     @Override
     protected void onDeviceItemClick(BluetoothDevice device) {
-        if (mAdapter != null) {
+        if ((mAdapter != null) && (mConnection != null)) {
             Toast.makeText(SimpleProtocolActivity.this, " Another device is in testing. ", Toast.LENGTH_SHORT).show();
             return;
         } else {
             mAdapter = newDeviceAdapter(device);
             Toast.makeText(SimpleProtocolActivity.this, "Start device " + device.getAddress(),
                     Toast.LENGTH_SHORT).show();
-
-            if (bluetoothTimer == null) {
-                bluetoothTimer = new Timer(true);
-            }
-
-            if (bluetoothTimerTask == null) {
-                bluetoothTimerTask = new TimerTask() {
-                    @Override
-                    public void run() {
-                        if (mConnection != null) {
-                            mConnection.getQueue().sendData();
-                        }
-                    }
-                };
-            }
 
             mHandler.postDelayed(new Runnable() {
                 @Override
@@ -427,6 +432,9 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
             mProtocolStack.destroyConnection(mConnection.getAdapter());
             mConnection = null;
         }
+        protocalConnectionFlag = false;
+        cancelmTimer();
+        cancelBluetoothTimer();
 
         bluetoothStatus.setText("蓝牙状态：断开");
     }
@@ -544,19 +552,9 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     if (mAdapter != null) {
                         mConnection = mProtocolStack.newConnection(mAdapter, SimpleProtocolActivity.this);
                         tvScreen.append("初始化已完成，可进行正常操作\n");
-
-                        tvScreen.append("获取设备信息中...\n");
-                        if (!mConnection.getDeviceInformation()) {
-                            tvScreen.append("获取设备信息：数据发送失败\n");
-                        }
                     }
                 }
             }, 100);
-
-            // Start the bluetooth Timer
-            if ((bluetoothTimer != null) && (bluetoothTimerTask != null)) {
-                bluetoothTimer.schedule(bluetoothTimerTask, 120, 50);
-            }
         }
     }
 
@@ -585,60 +583,9 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
                         connectState.setText("设备状态：已连接");
                         tvScreen.append("连接设备：成功\n");
+                        protocalConnectionFlag = true;
 
-                        if (task1 == null) {
-                            task1 = new TimerTask() {
-                                @Override
-                                public void run() {
-                                    if (mConnection != null) {
-                                        mConnection.sendKeepAlive();
-                                    }
-                                }
-                            };
-                        }
-
-                        if (task2 == null) {
-                            task2 = new TimerTask() {
-                                @Override
-                                public void run() {
-                                    if (mConnection != null) {
-                                        mConnection.getDeviceSoc();
-                                    }
-                                }
-                            };
-                        }
-
-                        if (task3 == null) {
-                            task3 = new TimerTask() {
-                                @Override
-                                public void run() {
-                                    if (mConnection != null) {
-                                        mConnection.getDeviceStatus();
-                                    }
-                                }
-                            };
-                        }
-
-                        if (task4 == null) {
-                            task4 = new TimerTask() {
-                                @Override
-                                public void run() {
-                                    if (mConnection != null) {
-                                        mConnection.getDeviceAction();
-                                    }
-                                }
-                            };
-                        }
-
-                        if (mTimer == null) {
-                            mTimer = new Timer(true);
-                        }
-
-                        mTimer.schedule(task1, 100, 1000);
-                        mTimer.schedule(task2, 130, 10000);
-                        mTimer.schedule(task3, 160, 1000);
-                        mTimer.schedule(task4, 190, 100);
-                        tvScreen.append("定时任务已启动\n");
+                        createmTimer();
                     } else {
                         tvScreen.append("连接设备：失败\n");
                     }
@@ -656,37 +603,10 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
                     if (ack[0] == mProtocolStack.getErrorCode(uProtocolStackInterface.ERROR.ERROR_OK)) {
                         connectState.setText("设备状态：已断开");
                         tvScreen.append("断开设备：成功\n");
+                        protocalConnectionFlag = false;
 
-                        if (mTimer != null) {
-                            if (task1 != null) {
-                                task1.cancel();
-                                task1 = null;
-                            }
-                            if (task2 != null) {
-                                task2.cancel();
-                                task2 = null;
-                            }
-                            if (task3 != null) {
-                                task3.cancel();
-                                task3 = null;
-                            }
-                            if (task4 != null) {
-                                task4.cancel();
-                                task4 = null;
-                            }
-                            mTimer.cancel();
-                            mTimer = null;
-                            tvScreen.append("定时任务已取消\n");
-                        }
-
-                        if (bluetoothTimer != null) {
-                            if (bluetoothTimerTask != null) {
-                                bluetoothTimerTask.cancel();
-                                bluetoothTimerTask = null;
-                            }
-                            bluetoothTimer.cancel();
-                            bluetoothTimer = null;
-                        }
+                        cancelmTimer();
+                        cancelBluetoothTimer();
                     } else {
                         tvScreen.append("断开设备：失败\n");
                     }
@@ -802,35 +722,63 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
             public void run() {
                 if (mConnection != null) {
                     int temp1 = (data[0] & 0x0FF) * 256 + (data[1] & 0x0FF) + 100000;
-                    int temp2 = (data[4] & 0x0FF) * 256 + (data[5] & 0x0FF) + 100000;
-                    int temp3 = (data[6] & 0x0FF) * 256 + (data[7] & 0x0FF) + 100000;
-                    int temp4 = (data[2] & 0x0FF) + 256;
+                    int temp2 = (data[8] & 0x0FF) * 256 + (data[9] & 0x0FF) + 100000;
+                    int temp3 = (data[10] & 0x0FF) * 256 + (data[11] & 0x0FF) + 100000;
                     String str1 = Integer.toString(temp1);
                     String str2 = Integer.toString(temp2);
                     String str3 = Integer.toString(temp3);
-                    String str4 = Integer.toBinaryString(temp4);
-
-                    // "instantPosition 是 瞬时位置"
-                    int instantPosition = 0;
-                    byte temp5 = data[2];
-                    for (int i=0;i<6;i++) {
-                        int b = temp5 & (1<<i);
-                        if (b != 0) {
-                            instantPosition = instantPosition + 1;
-                        } else {
-                            break;
-                        }
-                    }
 
                     actionInquire.setText("累计时间" + str1.substring(str1.length() - 5, str1.length())
-                            + "    瞬时位置" + str4.substring(str4.length() - 6, str4.length()) + "\n"
+                            + "    瞬时位置" + data[2] + " " + data[3] + " " + data[4] + " " + data[5]
+                            + " " + data[6] + " " + "\n"
                             + "总次数" + str2.substring(str2.length() - 5, str2.length())
                             + "   总长度" + str3.substring(str3.length() - 5, str3.length())
                             + "    瞬时深度" + data[3]);
 
-                    if (chartDialog != null) {
-                        chartDialog.updateData(instantPosition, (int)data[3]);
-                    }
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (chartDialog != null) {
+                                chartDialog.updateData((int) data[6], (int) data[7]);
+                            }
+                        }
+                    }, 1);
+
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (chartDialog != null) {
+                                chartDialog.updateData((int) data[5], (int) data[7]);
+                            }
+                        }
+                    }, 21);
+
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (chartDialog != null) {
+                                chartDialog.updateData((int) data[4], (int) data[7]);
+                            }
+                        }
+                    }, 41);
+
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (chartDialog != null) {
+                                chartDialog.updateData((int) data[3], (int) data[7]);
+                            }
+                        }
+                    }, 61);
+
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (chartDialog != null) {
+                                chartDialog.updateData((int) data[2], (int) data[7]);
+                            }
+                        }
+                    }, 81);
                 }
             }
         });
@@ -860,6 +808,112 @@ public class SimpleProtocolActivity extends BaseScanActivity implements uProtoco
         super.onIncorrectPassword(address);
         if (mAdapter != null) {
             tvScreen.append("Incorrect password\n");
+        }
+    }
+
+    public void createmTimer() {
+        if (mTimer == null) {
+            if (task1 == null) {
+                task1 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        if ((mConnection != null) && (protocalConnectionFlag == true)) {
+                            mConnection.sendKeepAlive();
+                        }
+                    }
+                };
+            }
+            if (task2 == null) {
+                task2 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        if ((mConnection != null) && (protocalConnectionFlag == true)) {
+                            mConnection.getDeviceSoc();
+                        }
+                    }
+                };
+            }
+            if (task3 == null) {
+                task3 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        if ((mConnection != null) && (protocalConnectionFlag == true)) {
+                            mConnection.getDeviceStatus();
+                        }
+                    }
+                };
+            }
+            if (task4 == null) {
+                task4 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        if ((mConnection != null) && (protocalConnectionFlag == true)) {
+                            mConnection.getDeviceAction();
+                        }
+                    }
+                };
+            }
+            mTimer = new Timer(true);
+
+            mTimer.schedule(task1, 100, 1000);
+            mTimer.schedule(task2, 130, 10000);
+            mTimer.schedule(task3, 160, 1000);
+            mTimer.schedule(task4, 190, 100);
+            tvScreen.append("定时任务已启动\n");
+        }
+    }
+
+    public void cancelmTimer() {
+        if (mTimer != null) {
+            if (task1 != null) {
+                task1.cancel();
+                task1 = null;
+            }
+            if (task2 != null) {
+                task2.cancel();
+                task2 = null;
+            }
+            if (task3 != null) {
+                task3.cancel();
+                task3 = null;
+            }
+            if (task4 != null) {
+                task4.cancel();
+                task4 = null;
+            }
+            mTimer.cancel();
+            mTimer = null;
+            tvScreen.append("定时任务已取消\n");
+        }
+    }
+
+    public void createBluetoothTimer() {
+        if (bluetoothTimer == null) {
+            bluetoothTimer = new Timer(true);
+        }
+
+        if (bluetoothTimerTask == null) {
+            bluetoothTimerTask = new TimerTask() {
+                @Override
+                public void run() {
+                    if (mConnection != null) {
+                        mConnection.getQueue().sendData();
+                    }
+                }
+            };
+        }
+
+        bluetoothTimer.schedule(bluetoothTimerTask, 10, 50);
+    }
+
+    public void cancelBluetoothTimer() {
+        if (bluetoothTimer != null) {
+            if (bluetoothTimerTask != null) {
+                bluetoothTimerTask.cancel();
+                bluetoothTimerTask = null;
+            }
+            bluetoothTimer.cancel();
+            bluetoothTimer = null;
         }
     }
 }

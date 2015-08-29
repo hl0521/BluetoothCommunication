@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,20 +30,21 @@ import com.uteacher.www.uteacherble.R;
  */
 public class ChartDialog extends DialogFragment {
 
+    public final static String TAG = ChartDialog.class.getSimpleName();
 
     private BarChartView barChartView;
     private HorizontalStackBarChartView horizontalStackBarChartView;
     private LineChartView lineChartView;
 
-    private final String[] mLabelsBarChart= {"","","","","","","","","",""};
-    private final float[] mValuesBarChart = {0,10,0,10,0,10,0,10,0,10};
+    private final String[] mLabelsBarChart = {"", "", "", "", "", "", "", "", "", ""};
+    private final float[] mValuesBarChart = {0, 10, 0, 10, 0, 10, 0, 10, 0, 10};
 
-    private final String[] mLabelsStackChart= {""};
-    private final float[][] mValuesStackChart = {{0},{-60f}};
+    private final String[] mLabelsStackChart = {""};
+    private final float[][] mValuesStackChart = {{0}, {-60f}};
 
 
-    private final String[] mLabelsLineChart= {"","","","","","","","","",""};
-    private final float[] mValuesLineChart = {0,0,0,0,0,0,0,0,0,0};
+    private final String[] mLabelsLineChart = {"", "", "", "", "", "", "", "", "", ""};
+    private final float[] mValuesLineChart = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -203,8 +205,8 @@ public class ChartDialog extends DialogFragment {
     }
 
     public void updateStackChart(ChartView chart, float delta) {
-        mValuesStackChart[0][0] = mValuesStackChart[0][0] + delta*10;
-        mValuesStackChart[1][0] = mValuesStackChart[1][0] + delta*10;
+        mValuesStackChart[0][0] = mValuesStackChart[0][0] + delta * 10;
+        mValuesStackChart[1][0] = mValuesStackChart[1][0] + delta * 10;
 
         chart.updateValues(0, mValuesStackChart[0]);
         chart.updateValues(1, mValuesStackChart[1]);
@@ -212,23 +214,27 @@ public class ChartDialog extends DialogFragment {
         chart.notifyDataUpdate();
     }
 
-    public void updateBarChart(ChartView chart, float data){
-        for (int i=1;i<mValuesBarChart.length;i++) {
-            mValuesBarChart[i-1] = mValuesBarChart[i];
+    public void updateBarChart(ChartView chart, float data) {
+        for (int i = 1; i < mValuesBarChart.length; i++) {
+            mValuesBarChart[i - 1] = mValuesBarChart[i];
         }
-        mValuesBarChart[mValuesBarChart.length -1 ] = data;
+        mValuesBarChart[mValuesBarChart.length - 1] = data;
 
         chart.updateValues(0, mValuesBarChart);
         chart.notifyDataUpdate();
     }
 
-    public void updateLineChart(LineChartView chart, float data){
-        for (int i=1;i<mValuesLineChart.length;i++) {
-            mValuesLineChart[i-1] = mValuesLineChart[i];
+    public void updateLineChart(LineChartView chart, float data) {
+        for (int i = 1; i < mValuesLineChart.length; i++) {
+            mValuesLineChart[i - 1] = mValuesLineChart[i];
         }
-        mValuesLineChart[mValuesLineChart.length-1] = data;
+        mValuesLineChart[mValuesLineChart.length - 1] = data;
 
-        chart.updateValues(0, mValuesLineChart);
-        chart.notifyDataUpdate();
+        try {
+            chart.updateValues(0, mValuesLineChart);
+            chart.notifyDataUpdate();
+        } catch (Exception e) {
+            Log.d(TAG,e.toString());
+        }
     }
 }
